@@ -1,0 +1,237 @@
+@import "_vars";
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    font-weight: 400;
+}
+button{
+    cursor: pointer;
+}
+input{
+    appearance: none;
+}
+body{
+    font-family: $Root,sans-serif;
+    color: $black;
+    font-size: 16px;
+    line-height: 24px;
+}
+a:hover{
+    text-decoration: none;
+}
+header{
+    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 0 0 auto;
+ }
+ .main{
+    /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 1 0 auto;
+ }
+ .bottom-blocks{
+    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 0 0 auto;
+ }
+
+ .wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    @include for-md{
+    }
+    
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+    // max-width: 1230px;
+    max-width: 1178px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 21px;
+    // color: $white;
+}
+.btn{
+    display: inline-block;
+    border-radius: 18px;
+    box-sizing: border-box;
+    padding: 7.5px 20px;
+    transition: $transition;
+    &--upper{
+        text-transform: uppercase;
+    }
+    &--gradient{
+        background: linear-gradient(270deg, rgba(0,127,194,1) 0%, rgba(229,127,188,1) 100%);
+
+        &:hover{
+            background: linear-gradient(90deg, rgba(0,127,194,1) 0%, rgba(229,127,188,1) 100%);
+        }
+        
+    }
+    &--blue{
+        background-color: $blue;
+        color: $white;
+        &:hover{
+            background-color: $purple_light;
+        }
+        &:active{
+            background-color: $purple;
+        }
+    }
+    &--pink{
+        background-color: $pink;
+        color: $white;
+        &:hover{
+            background-color: $purple_light;
+        }
+        &:active{
+            background-color: $purple;
+        }
+    }
+    &--medium{
+        font-weight: 500;
+    }
+    &--bold{
+        font-weight: 700;
+    }
+    &--transparent{
+        background-color: transparent;
+        color: $blue;
+        border: 1px solid $blue;
+        &:hover{
+            background-color: $blue;
+            color: $white;
+        }
+        &:active{
+            background-color: $purple;
+            color: $white;
+            border-color: $purple;
+        }
+    }
+
+}
+
+.page-title{
+    font-weight: 700;
+    margin-top: 25px;
+    font-size: 42px;
+    line-height: 40px;
+    color: $dark_blue;
+    text-align: center;
+}
+
+.breadcrumbs{  
+    &__nav{
+        margin-top: 10px;
+    } 
+    ul{
+        display: flex;
+        align-items: center;
+    }
+    li{
+        font-size: 12px;
+        line-height: 14px;
+        color: #CC79A3;
+        &::after{
+            content: '/';
+            padding: 0 3px;
+        }
+        &:last-child{
+            color: #97416D;
+            &::after{
+                display: none;
+            }
+        }
+        
+    }
+    li+li{
+        margin-left: 3px;
+    }
+}
+.content-block{
+    max-width: 754px;
+    margin: 0 auto;
+    p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    p+p{
+        margin-top: 1em;
+    }
+    &__btn-block{
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+    }
+}
+.section-page{
+    margin-bottom: 80px;
+}
+.content-slider{
+    overflow: visible !important;
+    &__arrows{
+        display: flex;
+        align-items: center;
+        margin-left: 24px;
+    }
+    &__arrow{
+        position: relative;
+        height: 28px;
+        cursor: pointer;
+        .icon{
+            width: 14px;
+            height: 28px;
+            stroke: $dark_blue;
+            transition: .3s;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 64px;
+            height: 1px;
+            background-color: $dark_blue;
+            top: 50%;
+            
+            transform: translateY(-50%);
+        }
+        &:hover{
+            .icon{
+                stroke: $pink;
+            }
+        }
+        &:active{
+            .icon{
+                stroke: $purple;
+            }
+        }
+    }
+    &__arrow-left{
+        &::before{
+            left: 16px;
+        }
+    }
+    &__arrow-right{
+        margin-left: 68px;
+        &::before{
+            left: -66px;
+        }
+    }
+    
+}
