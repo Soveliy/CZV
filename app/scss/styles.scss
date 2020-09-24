@@ -640,7 +640,7 @@ a{
 }
 .footer{
     background-color: $grey;
-    padding: 50px 0 105px;
+    padding: 50px 0 100px;
 
     &__row{
         display: flex;
@@ -648,6 +648,8 @@ a{
     }
     &__left{
         width: 166px;
+        flex-shrink: 0;
+        margin-right: 30px;
     }
     &__logo{
         height: 38px;
@@ -675,4 +677,221 @@ a{
             margin-top: 10px; 
         }
     }
+    &__right{
+        width: 100%;
+    }
+    &__right-head{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-bottom: 9px;
+        margin-bottom: 17px;
+        border-bottom: 1px solid $dark_blue;
+    }
+    &__list-title{
+        font-size: 20px;
+        line-height: 23px;
+        color: $dark_blue;
+        &:nth-child(2){
+            margin-left: auto;
+        }
+    }
+    &__messangeres{
+        margin-left: 100px;
+    }
+    &__menu-list{
+        &--columns-2{
+            column-count: 2;
+        }
+        &:not(.footer__menu-list--columns-2){
+            flex-shrink: 0;
+        }
+        li{
+            margin-bottom: 5px;
+        }
+        a{
+            font-size: 16px;
+            line-height: 20px;
+            color: $grey2;
+            font-weight: 500;
+        }
+    }
+    &__right-bottom{
+        display: flex;
+        align-items: flex-start;
+    }
+    &__contacts{
+        width: 267.5px;
+        flex-shrink: 0;
+        margin-left: auto;
+    }
+    &__social{
+        margin-bottom: 27px;
+    }
+    &__menu-container{
+        display: flex;
+        margin-right: 34px;
+    }
+}
+
+.messangeres{
+    &__list{
+        display: flex;
+        align-items: center;
+    }
+    &__item{
+        &+&{
+            margin-left: 14px;
+        }
+    }
+    &__icon{
+        height: 29px;
+        width: 29px;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        transition: $transition;
+        box-sizing: border-box;
+        padding: 6px;
+        svg{
+            max-width: 100%;
+            fill: $white;
+            transition: $transition;
+        }
+        &--viber{
+            background-color: #8800FF;
+        }
+        &--whatsup{
+            background-color: #1BAC00;
+        }
+    }
+    &__phone{
+        font-size: 22px;
+        line-height: 25px;
+        color: $dark_blue;
+        font-weight: 500;
+
+        &--lit{
+            font-size: 20px;
+            line-height: 23px;
+            color: $grey2;
+            font-weight: 700;
+        }
+    }
+    &__callback{
+        display: inline-block;
+        font-size: 13px;
+        line-height: 17px;
+        color: $dark_blue;
+        border-bottom: 1px solid $dark_blue;
+        cursor: pointer;
+        &:hover{
+            border-color: transparent;
+        }
+    }
+    
+}
+
+
+.social{
+    &__list{
+        display: flex;
+        align-items: center;
+    }
+    &__list-item{
+        &+&{
+            margin-left: 14px;
+        }
+    }
+    &__link {
+        height: 29px;
+        width: 29px;
+        
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        transition: $transition;
+        box-sizing: border-box;
+        border: 1px solid $dark_blue;
+        padding: 5px;
+        svg{
+            max-height: 15px;
+            max-width: 100%;
+            fill: $dark_blue;
+            transition: $transition;
+        }
+    }
+}
+.adress{
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 43px;
+    font-size: 14px;
+    line-height: 17px;
+    color: $grey2;
+    &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 28px;
+        width: 29px;
+        background: url(../img/icons/geo.svg) no-repeat left center;
+        background-size: contain;
+    }
+    &__link{
+        display: inline-block;
+        margin-top: 5px;
+        font-size: 14px;
+        line-height: 17px;
+        color: $dark_blue;
+        text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+}
+.time-work{
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 38px;
+    &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 2px;
+        height: 27px;
+        width: 25px;
+        background: url(../img/icons/work-time.svg) no-repeat center left;
+        background-size: contain;
+    }
+    &__title{
+        font-size: 12px;
+        line-height: 15px;
+        color: $grey2;
+    }
+    &__link{
+        font-size: 12px;
+        line-height: 16px;
+        color: $dark_blue;
+        border-bottom: 1px dashed $dark_blue;
+        transition: $transition;
+        &:hover{
+            border-color: transparent;
+        }
+    }
+}
+.preheader{
+    background-color: $preheader-color;
+    &__row{
+        display: flex;
+        align-items: center;
+        padding: 7px 0 10px 60px;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+    // &__time-work{
+    //     margin-right: 83px;
+    // }
 }
