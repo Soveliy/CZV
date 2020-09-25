@@ -187,6 +187,9 @@
 .head-block{
     display: flex;
     align-items: center;
+    @include for-md{
+        flex-direction: column;
+    }
     &__title{
         position: relative;
         font-size: 40px;
@@ -213,6 +216,18 @@
         &--black{
             color: $black;
         }
+        @include for-md{
+            text-align: center;
+            padding-left: 0;
+            margin-right: 0;
+            &::before{
+                display: none;
+            }
+        }
+        @include for-md-mob{
+            font-size: 32px;
+            line-height: 34px;
+        }
     }
     &__line{
         position: relative;
@@ -231,12 +246,26 @@
             background-color: $dark_blue;
             
         }
+        @include for-md{
+            display: none;  
+        }
     }
     &__btn{
         flex-shrink: 0;
         margin-left: 29px;
         padding: 9.5px 25px;
         border-radius: 40px;
+        @include for-md{
+            display: none;
+        }
+    }
+    &__btn-mobile-block{
+        display: none;
+        @include for-md{
+            display: block;
+            padding: 0 5px;
+            background-color: $white;
+        }
     }
 }
 .features{
@@ -803,13 +832,20 @@
 }
 
 .service-menu{
+    margin-top: 50px;   
     margin-bottom: 64px;     
-    background-color: #F8F8F8;    
+    background-color: #F8F8F8;
+    @include for-md{
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }  
     &__inner{
         min-height: 80px;
         display: flex;
         align-items: center;
-        margin-top: 50px;   
+        @include for-md{
+            width: 1024px;
+        }
     }
     &__item{
         display: flex;
@@ -818,6 +854,9 @@
         transition: $transition;
         &+&{
             margin-left: 50px;
+            @include for-lg{
+                margin-left: 20px;
+            }
         }
         &:hover{
             color: $dark_blue;
@@ -859,6 +898,12 @@
 .methodology-slider{
     &__title{
         margin-right: 118px;
+        @include for-lg{
+            margin-right: 5px;    
+        }
+        @include for-md{
+            margin-right: 0;
+        }
     }
     &__inner{
         margin-top: 60px;
@@ -866,21 +911,35 @@
     &__slider{
         margin-top: 60px;
         margin-bottom: 87px;
+        @include for-sm{
+            margin-bottom: 35px;
+        }
     }
     .swiper-slide{
         width: 557px !important;
+        @include for-md{
+            width: 100% !important;
+        }
     }
 }
 .methodology-item{
     max-width: 557px;
     width: 100%;
     margin-right: 30px;
+    @include for-md{
+        margin: 0 auto;
+        max-width: 346px;
+    }
     &__inner{
         display: flex;
         border: 1px solid $dark_blue;
         border-radius: 22px;
         overflow: hidden;
         padding-right: 18px;
+        @include for-md{
+            flex-direction: column;
+            padding-right: 0;
+        }
     }
     &__img-block{
         position: relative;
@@ -900,6 +959,16 @@
             top: 0;
             left: 0;
             z-index: -1;
+            @include for-md{
+                width: 100%;
+                height: 346px;
+                top: -60px;
+                transform: rotate(90deg);
+            }
+        }
+        @include for-md{
+            width: 100%;
+            height: 245px;
         }
     }
     &__img{
@@ -908,6 +977,11 @@
         height: 100%;
         background-color: transparent;
         border-radius: 22px 92px 92px 22px;
+        object-fit: cover;
+        object-position: 0 70%;
+        @include for-md{
+            border-radius: 22px 22px 92px 92px;
+        }
     }
     &__text-block{
         display: flex;
@@ -915,23 +989,39 @@
         justify-content: flex-start;
         margin-left: 42px;
         padding-top: 10px;
+        @include for-md{
+            padding: 10px 5px;
+            margin-left: 0;
+            text-align: center;
+        }
     }
     &__title{
         font-size: 28px;
         font-weight: 700;
         line-height: 32px;
         color: $dark_blue;
+        @include for-md{
+            margin-top: 32px;
+        }
     }
     &__description{
         margin-top: 5px;
         font-size: 16px;
         line-height: 22px;
         color: #181716;
+        @include for-md{
+            margin-top: 10px;
+        }
     } 
     &__btn-container{
         align-self: flex-end;
         margin-top: auto;
         margin-bottom: 25px;
+        @include for-md{
+            margin-bottom: 32px;
+            margin-top: 21px;
+            align-self: center;
+        }
     }
     &__more{
         // position: absolute;
@@ -945,19 +1035,46 @@
             background-color: $dark_blue;
             border-color: $dark_blue;
         }
+        @include for-md{
+            margin-top: 0;
+        }
     }
 }
 
 .price{
+    .content-slider__arrows{
+        position: relative;
+    }
+    .content-slider__arrow {
+        position: static;
+    }
+    .content-slider__arrow .icon{
+        display: none;
+    }
+    .content-slider__arrow-left::before{
+        width: 100% ;
+        left: 0;
+    }
+    .content-slider__arrow-right::before{
+        width: 100% ;
+        left: 0;
+    }
+   
     &__slider{
         margin-top: 62px;
         overflow: hidden !important;
         padding-bottom: 70px;
+        @include for-tiny-tablet{
+            margin-top: 34px;
+        }
     }
     &__table{
         border-spacing: 0;
         border: none;
         width: 100%;
+        @include for-tiny-tablet{
+            border-spacing: 1px ;
+        }
     }
     &__tr{
         &:first-child{
@@ -968,6 +1085,10 @@
                 background-color: #F3F3F3;
             }
         }
+        @include for-tiny-tablet{
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
     &__th{
         padding: 8px 0;
@@ -977,9 +1098,38 @@
         font-weight: 400;
         &:first-child{
             width: 820px;
+            @include for-md{
+                width: 55%;
+            }
+            @include for-tiny-tablet{
+                width: 100%;
+                border-bottom: 1px solid $white ;
+            }
         }
         &:nth-child(2){
             width: 50px;
+            @include for-tiny-tablet{
+                width: 0;
+            }
+        }
+        &:nth-child(3){
+            @include for-tiny-tablet{
+                width: 60%;
+                border-right: 1px solid $white ;
+            }
+            
+        }
+        &:nth-child(4){
+            @include for-tiny-tablet{
+                width: 40%;
+            }
+        }
+        @include for-tiny-tablet{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            height: 32px;
         }
     }
     &__td{
@@ -990,12 +1140,40 @@
         &:first-child{
             padding-left: 50px;
             text-align: left;
+            @include for-md{
+                padding-left: 20px;
+                padding-right: 10px; 
+            }
+            @include for-tiny-tablet{
+                padding-left: 12px;
+                padding-bottom: 7px;
+                width: 100%;
+            }
+        }
+        &:nth-child(2){
+            @include for-tiny-tablet{
+                width: 11%;
+                padding-left: 0;
+            }
         }
         &:nth-child(3){
             color: $dark_blue;
+            @include for-tiny-tablet{
+                width: 40%;                
+            }
+        }
+        &:nth-child(4){
+            @include for-tiny-tablet{
+                width: 49%;                
+            }
         }
         &--tip{
             position: relative;
+        }
+        @include for-tiny-tablet{
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
     &__link{
@@ -1041,9 +1219,21 @@
             top: -20px;
             left: 50%;
             transform: translateX(-50%);
+            @include for-tiny-tablet{                
+                left: 5px;
+                transform: translateX(0);
+            }
         }
         &.active{
             display: block;
+        }
+        @include for-tiny-tablet{
+            left: -9px;
+            padding: 7px 11px;
+            width: 177px;                
+            font-size: 14px;
+            line-height: 16px;
+            border-radius: 5px;
         }
     }
     &__footnote{
@@ -1051,26 +1241,95 @@
         font-size: 12px;
         line-height: 14px;
         color: #181716;
+        @include for-tiny-tablet{
+            display: none;
+        }
+    }
+    &__more{
+        display: flex;
+        align-items: center;
+        padding: 5px 14px;
+        &:hover{
+            .price__more-icon-container{
+                border-color: $white;
+                
+            }
+            .price__more-icon{
+                stroke: $white;
+            }
+        }
+    }
+    &__more-container{
+        position: relative;
+        display: none;
+        justify-content: center;  
+        transition: $transition;      
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: $dark_blue;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: -1;
+        }
+        @include for-tiny-tablet{
+            display: flex;
+        }
+    }
+    &__more-inner{
+        display: inline-block;
+        background-color: $white;
+        padding: 0 14.5px;
+    }
+    &__more-icon-container{
+        display: flex;  
+        margin-left: 17px;
+        align-items: center;
+        justify-content: center;
+        width: 33px;
+        height: 33px;
+        border: 1px solid $blue;
+        border-radius: 50%;
+    }
+    &__more-icon{
+        width: 18px;
+        height: 18px;
+        stroke: $dark_blue;
+        transition: $transition;
     }
 }
 
 .reviews{
     &__slider{
         margin-top: 60px;
+        @include for-sm{
+            margin-top: 37px;
+        }
     }
     &__swiper-slide{
         width: 362px !important;
+        @include for-md{
+            width: 100% !important;
+        }
     }
 }
 
 .reviews-item{
-    
+    @include for-md{
+        max-width: 345px;
+        margin: 0 auto;
+    }
     &__inner{
         min-height: 249px;
         padding: 18px 18px 37px 22px;
         border-radius: 15px;
         border: 1px solid $dark_blue;
         background-color: #F9F9F9;
+        @include for-md{
+            padding: 18px 11px 37px 18px;
+        }
     }
     &__head{
         display: flex;
@@ -1124,15 +1383,28 @@
     &__body{
         font-size: 16px;
         line-height: 22px;
+        @include for-md{
+            font-size: 15px;
+            line-height: 21px;
+        }
     }
 }
 
 .gallery{
     &__slider{
         margin-top: 60px;
+        @include for-sm{
+            margin-top: 34px;
+        }
     }
     &__swiper-slide{
         width: 362px !important;
+        @include for-md{
+            width: 45% !important;
+        }
+        @include for-sm{
+            width: 100% !important;
+        }
     }
 }
 
@@ -1176,6 +1448,11 @@
                 border-top: 1px solid #D9DADA;
             }
         }
+        @include for-sm{
+            padding: 0 15px;
+            font-size: 16px;
+            line-height: 22px;
+        }
     }
     &__question-mark{
         display: flex;
@@ -1186,6 +1463,10 @@
         width: 23px;
         height: 23px;
         border-radius: 50%;
+        flex-shrink: 0;
+        @include for-sm{
+            margin-right: 17px;
+        }
     }
     &__icon{
         fill: $dark_blue;
@@ -1193,6 +1474,7 @@
         &--question-mark{
             width: 11px;
             height: 11px;
+            flex-shrink: 0;
         }
     }
     &__arrow{
@@ -1204,12 +1486,14 @@
         border-radius: 50%;
         border: 2px solid $dark_blue;
         margin-left: auto;
+        flex-shrink: 0;
     }
     &__arrow-icon{
         width: 12px;
         height: 12px;
         stroke: $dark_blue;
         transition: $transition;
+        
         &.active{
             transform: rotate(180deg);
         }
@@ -1221,6 +1505,9 @@
         font-size: 16px;
         line-height: 22px;
         border-bottom: 1px solid #D9DADA;
+        @include for-sm{
+            padding: 18px 16.5px 31px;
+        }
     }
     &__btn-container{
         display: flex;
@@ -1229,12 +1516,20 @@
     }
     &__btn{
         margin-left: auto;
+        @include for-sm{
+            margin: 18px auto 0;
+        }
     }
 }
 
 .specialists{
-    &__container{
+    &__slider{
         margin-top: 62px;
+        @include for-sm{
+            margin-top: 45px;
+        }
+    }
+    &__container{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1246,19 +1541,32 @@
     border-radius: 15px;
     border: 1px solid $dark_blue;
     overflow: hidden;
+    @include for-tiny-tablet{
+        max-width: 312px;
+    }
     &__inner{
         display: flex;
+        @include for-tiny-tablet{
+            flex-direction: column;
+        }
     }
     &__img-block{
         width: 254px;
         height: 297px;
         flex-shrink: 0;
+        @include for-tiny-tablet{
+            width: auto;
+            height: 300 px;
+        }
     }
     &__img{
         display: block;
         width: 100%;
         height: 100%;
         object-fit: cover;
+        @include for-tiny-tablet{
+            object-position: top;
+        }
     }
     &__text-block{
         margin-left: -26px;
@@ -1267,6 +1575,13 @@
         background-color: #F9F9F9;
         font-size: 16px;
         line-height: 22px;
+        @include for-tiny-tablet{
+            text-align: center;
+            margin-top: -20px;
+            margin-left: 0;
+            padding: 14.4px 18.5px 27.2px;    
+            border-radius: 15px 15px 0 0;
+        }
     }
     &__text-item{
         margin-bottom: 10px;
@@ -1276,6 +1591,10 @@
             border: none;
             padding: 0;
             margin: 0;
+        }
+        @include for-tiny-tablet{
+            padding-bottom: 8px;
+            margin-bottom: 8px;
         }
     }
     &__name{
@@ -1289,12 +1608,18 @@
     &__btn-container{
         display: flex;
         justify-content: flex-end;
+        @include for-tiny-tablet{
+            justify-content: center;
+        }
     }
 }
 
 .articles{
     &__slider{
         margin-top: 62px;
+        @include for-sm{
+            margin-top: 27px;
+        }
     }
     &__link{
         font-weight: 700;
@@ -1302,5 +1627,10 @@
         line-height: 28px;
         color: #868786;
         text-decoration: underline;
+    }
+    &__swiper-slide{
+        @include for-tiny-tablet{
+            // width: 80% !important;
+        }
     }
 }

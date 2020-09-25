@@ -47,6 +47,16 @@ $('.content-slider').each(function(){
         nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
         prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
       },
+      breakpoints: {        
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },       
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 40
+        }
+      }
     });
   } else if ($(this).hasClass('gallery__slider')){
     var contentSlider = new Swiper(this, {    
@@ -56,6 +66,20 @@ $('.content-slider').each(function(){
         nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
         prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
       },
+      breakpoints: {        
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },   
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },     
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 40
+        }
+      }
     });
   } else if($(this).hasClass('articles__slider')){
     var contentSlider = new Swiper(this, {    
@@ -65,6 +89,21 @@ $('.content-slider').each(function(){
         nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
         prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
       },
+      breakpoints: {        
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 0
+        },   
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 0
+        },     
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 40
+        }
+      }
+      
     });
   } else {
     var contentSlider = new Swiper(this, {    
@@ -74,6 +113,16 @@ $('.content-slider').each(function(){
         nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
         prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
       },
+      breakpoints: {        
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },       
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 40
+        }
+      }
     });
   }
   
