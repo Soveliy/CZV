@@ -41,8 +41,9 @@
     box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.16);
 
     &__logo{
-        margin-right: auto;
+      
         @include for-md(){
+            margin-right: auto;
             width: 177px;
             height: 41px;
         }
@@ -295,6 +296,8 @@
     }
 }
 .main-menu{
+    margin-right: auto;
+    margin-left: 28px;
     @include for-md(){
         display: none;
     }
@@ -303,6 +306,12 @@
     }
     > ul > li{
         margin: 0 12px;
+
+        &:hover{
+            .submenu-container{
+                display: block;
+            }
+        }
     }
     > ul > li > a{
         font-size: 16px;
@@ -317,18 +326,108 @@
             color: $purple;
         }
     }
+    > ul > li > ul{
+        columns: 3;
+    }
+    .submenu-container{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 21px 0 18px;
+        z-index: 500;
+        background-color: #EBEBEB;
+        ul {
+            max-width: 1230px;
+            box-sizing: border-box;
+            padding: 0 315px 0 15px;
+            margin: 0 auto;
+            columns: 3;
+
+            li{
+                margin-bottom: 9px;
+
+                a{
+                    padding-left:18px;
+                   position: relative;
+                   font-size: 16px;
+                   line-height: 19px;
+                   color: $dark_blue;
+                   transition: $transition;
+                   &:hover{
+                       color: $blue;
+                   }
+                   &:active{
+                       color: $purple;
+                   }
+                   &:before{
+                       content: '';
+                       position: absolute;
+                       top: 50%;
+                       margin-top: -2px;
+                       left: 0;
+                       height: 4px;
+                       width: 4px;
+                       border-radius: 50%;
+                       background-color: $dark_blue;
+                   }
+                }
+            }
+        }
+    }
 }
 .main-slider{
     position: relative;
     color: $white;
+    &__image-mob-container{
+        display: none;
+        height: 202px;
+        @include for-md-mob(){
+            display: block;
+            margin-bottom: 20px;
+        }
+
+
+    }
+    &__image-mob{
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
     &__item{
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat ;
         padding: 24px 0;
+        @include for-md-mob(){
+            position: relative;
+            padding-top: 0;
+            padding-bottom: 79px;
+            text-align: center;
+            background-image: none !important;
+
+            &:before{
+                content: '';
+                position: absolute;
+                z-index: -1;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: calc(100% - 202px);
+                background: url(../img/mob-stock.jpg) no-repeat center bottom;
+                background-size: cover;
+            }
+        }
 
         &--main-page{
             padding-bottom: 124px;
+
+            @include for-md-mob(){
+                padding-top: 0;
+                padding-bottom: 79px;
+            }
         }
     }
     &__dot{
@@ -336,6 +435,9 @@
         width: 8px;
         background-color: $white;
         border-radius: 50%;
+        @include for-md-mob(){
+            display: none;
+        }
         &--top{
            margin: 0 0 17px 17px;
         }
@@ -346,6 +448,9 @@
         background: url(../img/icons/arrow_bot.svg) no-repeat center center;
         background-size: contain;
         margin: 0 0 17px 17px;
+        @include for-md-mob(){
+            display: none;
+        }
     }
     &__stock{
         font-size: 49px;
@@ -353,15 +458,27 @@
         font-weight: 500;
         text-transform: uppercase;
         color: $pink;
+        @include for-md-mob(){
+            font-size: 49px;
+            line-height: 54px;
+        }
     }
     &__stock-value{
         font-size: 64px;
         line-height: 77px;
         letter-spacing: -2px;
+        @include for-md-mob(){
+            font-size: 57px;
+            line-height: 77px;
+        }
     }
     &__stock-text{
         font-size: 38px;
         line-height: 41px;
+        @include for-md-mob(){
+            font-size: 33px;
+            line-height: 37px;
+        }
     }
     &__btn{
         margin-top: 23px;
@@ -384,6 +501,11 @@
             align-items: center;
             padding-left: 17px;
             box-sizing: border-box;
+            @include for-md-mob(){
+                position: relative;
+                justify-content: center;
+                padding-left: 0;
+            }
         }
         &--main-page{
            
@@ -401,6 +523,9 @@
 
         &--main-page{
             margin:  0 0 0 15px;
+            @include for-md-mob(){
+                margin: 27px 0 0 0;
+            }
         }
         > span{
             font-size: 16px;
@@ -426,6 +551,9 @@
         height: 2px;
         background-color: $white;
         margin: 0 15px;
+        @include for-md-mob(){
+            display: none;
+        }
     }
     &__arrows{
         display: flex;
@@ -433,6 +561,17 @@
     }
     &__arrow.swiper-button-next{
         margin-left: 15px;
+        @include for-md-mob(){
+            position: absolute;
+            right: 0;
+        }
+    }
+    &__arrow.swiper-button-prev{
+       
+        @include for-md-mob(){
+            position: absolute;
+            left: 0;
+        }
     }
 
 
@@ -2249,5 +2388,30 @@
             transition: $transition;
         }
 
+    }
+}
+
+.b-modal{
+    position: relative;
+    box-sizing: border-box;
+    padding: 100px 30px 30px;
+    max-width: 618px;
+    border-radius: 15px;
+    background-color: $white;
+    width: 100%;
+    margin: 0 auto;
+
+    &_close{
+        position: absolute;
+        top: 26px;
+        right: 26px;
+        height: 23px;
+        width: 23px;
+        background: url(../img/icons/close.svg) no-repeat center center;
+        background-size: contain;
+        transition: $transition;
+        &:hover{
+            transform: rotate(180deg);
+        }
     }
 }

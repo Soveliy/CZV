@@ -208,3 +208,11 @@ $(".mobile-menu__nav > ul > li > span").on('click', function(){
     }
     }  
   });
+
+
+  $(".callback-js").click(function(){
+    $("#callback-modal").arcticmodal();
+  });
+  $(".reception-js").click(function(){
+    $("#reception-modal").arcticmodal();
+  });
