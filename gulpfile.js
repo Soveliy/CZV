@@ -29,6 +29,7 @@ gulp.task('css', function(){
   return gulp.src([
     'node_modules/normalize.css/normalize.css',
     'node_modules/swiper/swiper-bundle.css',
+    'assest/css/jquery.rateyo.css',
     
     // 'node_modules/rateyo/lib/es/rateyo.css',
     // 'node_modules/ion-rangeslider/css/ion.rangeSlider.min.css',
@@ -52,6 +53,7 @@ gulp.task('script', function(){
 gulp.task('js', function(){
   return gulp.src([
     'node_modules/swiper/swiper-bundle.js',
+    'assest/js/jquery.rateyo.js',
     // 'node_modules/rateyo/lib/iife/rateyo.js',
     // 'node_modules/ion-rangeslider/js/ion.rangeSlider.min.js',
   ])
