@@ -188,15 +188,16 @@ $('.price__icon-container').mouseleave(function () {
 });
 
 
-//FAQ dropdown
+//Dropdown
 
+function dropdown(selectorTitle, activeClass){
+  $(selectorTitle).click(function () {
+    $(this).toggleClass(activeClass);
+    $(this).next().toggleClass(activeClass).slideToggle();
+  });
+}
 
-$('.questions-dropdown__title-block').click(function () {
-  $(this).toggleClass('active');
-  $(this).next().toggleClass('active').slideToggle();
-  $(this).find('.questions-dropdown__arrow-icon').toggleClass('active');
-});
-
+dropdown('.questions-dropdown__title-block', 'active')
 
 // rate
 $('.rate').each(function () {
@@ -264,9 +265,6 @@ $('.rate').each(function () {
     } catch{}
   
   }
-
-
-
 
 timer('.action--1 .timer', '2020-10-15');
 timer('.action--2 .timer', '2020-11-15');
