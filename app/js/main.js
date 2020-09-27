@@ -94,6 +94,7 @@ $('.content-slider.reviews__slider').each(function(){
         slidesPerView: 1,
         spaceBetween: 20
       },
+<<<<<<< HEAD
       1025: {
         slidesPerView: 3,
         spaceBetween: 40
@@ -173,6 +174,38 @@ $('.content-slider.specialists__slider').each(function(){
       }
     }
   });
+=======
+    });
+  } else if ($(this).hasClass('gallery__slider')){
+    var contentSlider = new Swiper(this, {    
+      spaceBetween: 30,
+      slidesPerView: 3,
+      navigation: {
+        nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
+        prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
+      },
+    });
+  } else if($(this).hasClass('articles__slider')){
+    var contentSlider = new Swiper(this, {    
+      spaceBetween: 10,
+      slidesPerView: 4,
+      navigation: {
+        nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
+        prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
+      },
+    });
+  } else {
+    var contentSlider = new Swiper(this, {    
+      spaceBetween: 60,
+      slidesPerView: 2,
+      navigation: {
+        nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
+        prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
+      },
+    });
+  }
+  
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
 });
 
 

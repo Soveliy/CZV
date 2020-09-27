@@ -595,6 +595,7 @@
 .head-block {
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     &--empty{
         position: relative;       
         .head-block__line{
@@ -640,6 +641,9 @@
     }
 
     &__title {
+=======
+    &__title{
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
         position: relative;
         font-size: 40px;
         line-height: 44px;
@@ -668,6 +672,7 @@
         &--black {
             color: $black;
         }
+<<<<<<< HEAD
 
         @include for-md {
             text-align: center;
@@ -683,6 +688,8 @@
             font-size: 32px;
             line-height: 34px;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__line {
@@ -703,10 +710,13 @@
             background-color: $dark_blue;
 
         }
+<<<<<<< HEAD
 
         @include for-md {
             display: none;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__btn {
@@ -714,6 +724,7 @@
         margin-left: 29px;
         padding: 9.5px 25px;
         border-radius: 40px;
+<<<<<<< HEAD
 
         @include for-md {
             display: none;
@@ -728,6 +739,8 @@
             padding: 0 5px;
             background-color: $white;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 }
 
@@ -1411,6 +1424,7 @@
 
 
 
+<<<<<<< HEAD
 
 .service-menu {
     margin-top: 50px;
@@ -1430,6 +1444,16 @@
         @include for-md {
             width: 1024px;
         }
+=======
+.service-menu{
+    margin-bottom: 64px;     
+    background-color: #F8F8F8;    
+    &__inner{
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        margin-top: 50px;   
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__item {
@@ -1440,10 +1464,13 @@
 
         &+& {
             margin-left: 50px;
+<<<<<<< HEAD
 
             @include for-lg {
                 margin-left: 20px;
             }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
         }
 
         &:hover {
@@ -1493,6 +1520,7 @@
 .methodology-slider {
     &__title {
         margin-right: 118px;
+<<<<<<< HEAD
 
         @include for-lg {
             margin-right: 5px;
@@ -1501,6 +1529,8 @@
         @include for-md {
             margin-right: 0;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__inner {
@@ -1510,18 +1540,24 @@
     &__slider {
         margin-top: 60px;
         margin-bottom: 87px;
+<<<<<<< HEAD
 
         @include for-sm {
             margin-bottom: 35px;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     .swiper-slide {
         width: 557px !important;
+<<<<<<< HEAD
 
         @include for-md {
             width: 100% !important;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 }
 
@@ -1529,6 +1565,7 @@
     max-width: 557px;
     width: 100%;
     margin-right: 30px;
+<<<<<<< HEAD
 
     @include for-md {
         margin: 0 auto;
@@ -1536,16 +1573,22 @@
     }
 
     &__inner {
+=======
+    &__inner{
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
         display: flex;
         border: 1px solid $dark_blue;
         border-radius: 22px;
         overflow: hidden;
         padding-right: 18px;
+<<<<<<< HEAD
 
         @include for-md {
             flex-direction: column;
             padding-right: 0;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__img-block {
@@ -1567,6 +1610,7 @@
             top: 0;
             left: 0;
             z-index: -1;
+<<<<<<< HEAD
 
             @include for-md {
                 width: 100%;
@@ -1579,6 +1623,8 @@
         @include for-md {
             width: 100%;
             height: 245px;
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
         }
     }
 
@@ -1588,12 +1634,15 @@
         height: 100%;
         background-color: transparent;
         border-radius: 22px 92px 92px 22px;
+<<<<<<< HEAD
         object-fit: cover;
         object-position: 0 70%;
 
         @include for-md {
             border-radius: 22px 22px 92px 92px;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__text-block {
@@ -1602,12 +1651,15 @@
         justify-content: flex-start;
         margin-left: 42px;
         padding-top: 10px;
+<<<<<<< HEAD
 
         @include for-md {
             padding: 10px 5px;
             margin-left: 0;
             text-align: center;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__title {
@@ -1615,10 +1667,13 @@
         font-weight: 700;
         line-height: 32px;
         color: $dark_blue;
+<<<<<<< HEAD
 
         @include for-md {
             margin-top: 32px;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__description {
@@ -1626,6 +1681,7 @@
         font-size: 16px;
         line-height: 22px;
         color: #181716;
+<<<<<<< HEAD
 
         @include for-md {
             margin-top: 10px;
@@ -1642,6 +1698,13 @@
             margin-top: 21px;
             align-self: center;
         }
+=======
+    } 
+    &__btn-container{
+        align-self: flex-end;
+        margin-top: auto;
+        margin-bottom: 25px;
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__more {
@@ -1657,6 +1720,7 @@
             background-color: $dark_blue;
             border-color: $dark_blue;
         }
+<<<<<<< HEAD
 
         @include for-md {
             margin-top: 0;
@@ -1695,16 +1759,29 @@
         @include for-tiny-tablet {
             margin-top: 34px;
         }
+=======
+    }
+}
+
+.price{
+    &__slider{
+        margin-top: 62px;
+        overflow: hidden !important;
+        padding-bottom: 70px;
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__table {
         border-spacing: 0;
         border: none;
         width: 100%;
+<<<<<<< HEAD
 
         @include for-tiny-tablet {
             border-spacing: 1px;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__tr {
@@ -1717,11 +1794,14 @@
                 background-color: #F3F3F3;
             }
         }
+<<<<<<< HEAD
 
         @include for-tiny-tablet {
             display: flex;
             flex-wrap: wrap;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__th {
@@ -1733,6 +1813,7 @@
 
         &:first-child {
             width: 820px;
+<<<<<<< HEAD
 
             @include for-md {
                 width: 55%;
@@ -1742,10 +1823,13 @@
                 width: 100%;
                 border-bottom: 1px solid $white;
             }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
         }
 
         &:nth-child(2) {
             width: 50px;
+<<<<<<< HEAD
 
             @include for-tiny-tablet {
                 width: 0;
@@ -1772,6 +1856,8 @@
             justify-content: center;
             padding: 0;
             height: 32px;
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
         }
     }
 
@@ -1784,6 +1870,7 @@
         &:first-child {
             padding-left: 50px;
             text-align: left;
+<<<<<<< HEAD
 
             @include for-md {
                 padding-left: 20px;
@@ -1802,10 +1889,13 @@
                 width: 11%;
                 padding-left: 0;
             }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
         }
 
         &:nth-child(3) {
             color: $dark_blue;
+<<<<<<< HEAD
 
             @include for-tiny-tablet {
                 width: 40%;
@@ -1816,17 +1906,22 @@
             @include for-tiny-tablet {
                 width: 49%;
             }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
         }
 
         &--tip {
             position: relative;
         }
+<<<<<<< HEAD
 
         @include for-tiny-tablet {
             display: flex;
             align-items: center;
             justify-content: center;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__link {
@@ -1877,16 +1972,20 @@
             top: -20px;
             left: 50%;
             transform: translateX(-50%);
+<<<<<<< HEAD
 
             @include for-tiny-tablet {
                 left: 5px;
                 transform: translateX(0);
             }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
         }
 
         &.active {
             display: block;
         }
+<<<<<<< HEAD
 
         @include for-tiny-tablet {
             left: -9px;
@@ -1896,6 +1995,8 @@
             line-height: 16px;
             border-radius: 5px;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__footnote {
@@ -1903,6 +2004,7 @@
         font-size: 12px;
         line-height: 14px;
         color: #181716;
+<<<<<<< HEAD
 
         @include for-tiny-tablet {
             display: none;
@@ -1970,20 +2072,26 @@
         height: 18px;
         stroke: $dark_blue;
         transition: $transition;
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 }
 
 .reviews {
     &__slider {
         margin-top: 60px;
+<<<<<<< HEAD
 
         @include for-sm {
             margin-top: 37px;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__swiper-slide {
         width: 362px !important;
+<<<<<<< HEAD
 
         @include for-md {
             width: 100% !important;
@@ -1998,15 +2106,26 @@
     }
 
     &__inner {
+=======
+    }
+}
+
+.reviews-item{
+    
+    &__inner{
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
         min-height: 249px;
         padding: 18px 18px 37px 22px;
         border-radius: 15px;
         border: 1px solid $dark_blue;
         background-color: #F9F9F9;
+<<<<<<< HEAD
 
         @include for-md {
             padding: 18px 11px 37px 18px;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__head {
@@ -2072,27 +2191,36 @@
     &__body {
         font-size: 16px;
         line-height: 22px;
+<<<<<<< HEAD
 
         @include for-md {
             font-size: 15px;
             line-height: 21px;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 }
 
 .gallery {
     &__slider {
         margin-top: 60px;
+<<<<<<< HEAD
         @include for-sm {
             margin-top: 34px;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__swiper-slide {
         width: 362px !important;
+<<<<<<< HEAD
         @include for-md {
             width: 100% !important;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 }
 
@@ -2176,12 +2304,15 @@
                 transform: rotate(180deg);
             }
         }
+<<<<<<< HEAD
 
         @include for-sm {
             padding: 0 15px;
             font-size: 16px;
             line-height: 22px;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__question-mark {
@@ -2193,11 +2324,14 @@
         width: 23px;
         height: 23px;
         border-radius: 50%;
+<<<<<<< HEAD
         flex-shrink: 0;
 
         @include for-sm {
             margin-right: 17px;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__icon {
@@ -2207,7 +2341,6 @@
         &--question-mark {
             width: 11px;
             height: 11px;
-            flex-shrink: 0;
         }
     }
 
@@ -2220,7 +2353,6 @@
         border-radius: 50%;
         border: 2px solid $dark_blue;
         margin-left: auto;
-        flex-shrink: 0;
     }
 
     &__arrow-icon {
@@ -2228,6 +2360,12 @@
         height: 12px;
         stroke: $dark_blue;
         transition: $transition;
+<<<<<<< HEAD
+=======
+        &.active{
+            transform: rotate(180deg);
+        }
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__body {
@@ -2237,10 +2375,13 @@
         font-size: 16px;
         line-height: 22px;
         border-bottom: 1px solid #D9DADA;
+<<<<<<< HEAD
 
         @include for-sm {
             padding: 18px 16.5px 31px;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__btn-container {
@@ -2251,6 +2392,7 @@
 
     &__btn {
         margin-left: auto;
+<<<<<<< HEAD
 
         @include for-sm {
             margin: 18px auto 0;
@@ -2275,6 +2417,14 @@
     }
 
     &__container {
+=======
+    }
+}
+
+.specialists{
+    &__container{
+        margin-top: 62px;
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
         display: flex;
         align-items: center;
         justify-content: center;
@@ -2286,6 +2436,7 @@
     border-radius: 15px;
     border: 1px solid $dark_blue;
     overflow: hidden;
+<<<<<<< HEAD
     &--vertiacal{
         max-width: 363px;
         .specialist-item__inner{
@@ -2321,17 +2472,24 @@
         @include for-tiny-tablet {
             flex-direction: column;
         }
+=======
+    &__inner{
+        display: flex;
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__img-block {
         width: 254px;
         height: 297px;
         flex-shrink: 0;
+<<<<<<< HEAD
 
         @include for-tiny-tablet {
             width: auto;
             height: 300px;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__img {
@@ -2339,10 +2497,13 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+<<<<<<< HEAD
 
         @include for-tiny-tablet {
             object-position: top;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__text-block {
@@ -2352,6 +2513,7 @@
         background-color: #F9F9F9;
         font-size: 16px;
         line-height: 22px;
+<<<<<<< HEAD
 
         @include for-tiny-tablet {
             text-align: center;
@@ -2360,6 +2522,8 @@
             padding: 14.4px 18.5px 27.2px;
             border-radius: 15px 15px 0 0;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__text-item {
@@ -2372,11 +2536,14 @@
             padding: 0;
             margin-top: 41px;
         }
+<<<<<<< HEAD
 
         @include for-tiny-tablet {
             padding-bottom: 8px;
             margin-bottom: 8px;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__name {
@@ -2392,9 +2559,12 @@
     &__btn-container {
         display: flex;
         justify-content: flex-end;
+<<<<<<< HEAD
         @include for-tiny-tablet {
             justify-content: center;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
     &__position{
         padding: 0 30px 8px;
@@ -2404,10 +2574,13 @@
 .articles {
     &__slider {
         margin-top: 62px;
+<<<<<<< HEAD
 
         @include for-sm {
             margin-top: 27px;
         }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 
     &__link {
