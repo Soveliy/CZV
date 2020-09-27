@@ -135,9 +135,17 @@ a{
     line-height: 40px;
     color: $dark_blue;
     text-align: center;
+    @include for-md-mob{
+        font-size:  38px;
+        line-height: 42px;
+        font-weight: 400;
+    }
 }
 
 .breadcrumbs{  
+    @include for-md{
+        display: none;
+    }
     &__nav{
         margin-top: 10px;
     } 
@@ -165,6 +173,7 @@ a{
         margin-left: 3px;
     }
 }
+
 .content-block{
     max-width: 754px;
     margin: 0 auto;
@@ -181,15 +190,26 @@ a{
         justify-content: center;
     }
 }
+
 .section-page{
     margin-bottom: 80px;
+    @include for-md-mob{
+        margin-bottom: 75px;
+    }
 }
+
 .content-slider{
     overflow: visible !important;
     &__arrows{
         display: flex;
         align-items: center;
         margin-left: 24px;
+        @include for-md{
+            margin-left: 0; 
+            margin-top: 22px;
+            width: 100%;
+            justify-content: space-between; 
+        }
     }
     &__arrow{
         position: relative;
@@ -207,9 +227,12 @@ a{
             width: 64px;
             height: 1px;
             background-color: $dark_blue;
-            top: 50%;
-            
+            top: 50%;            
             transform: translateY(-50%);
+            @include for-md{
+                width: 53px;
+                z-index: -1;
+            }
         }
         &:hover{
             .icon{
@@ -230,7 +253,10 @@ a{
     &__arrow-right{
         margin-left: 68px;
         &::before{
-            left: -66px;
+            right: 16px;
+        }
+        @include for-md{
+            margin-left: 0;
         }
     }
     
