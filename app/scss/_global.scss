@@ -139,11 +139,14 @@ a{
 
 .breadcrumbs{  
 <<<<<<< HEAD
+<<<<<<< HEAD
     &--bg-grey{
         background-color: #f9f9f9;
         padding-top: 10px;
         margin-top: 0;
     }
+=======
+>>>>>>> parent of 9cdaf12... Item, doc
     @include for-md{
         display: none;
     }
@@ -179,18 +182,6 @@ a{
 .content-block{
     max-width: 754px;
     margin: 0 auto;
-    &--border-right{
-        margin: 32px 0;
-        padding: 30px 0;
-        background-color: #F9F9F9;
-    }
-    h4{
-        margin-top: 2em;
-        margin-bottom: 1em;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 22px;
-    }
     p{
         font-size: 16px;
         line-height: 22px;
@@ -208,7 +199,7 @@ a{
     margin-bottom: 80px;
 <<<<<<< HEAD
     @include for-md-mob{
-        margin-bottom: 60px;
+        margin-bottom: 75px;
     }
 =======
 >>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
@@ -263,6 +254,7 @@ a{
         }
     }
     
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 
@@ -327,3 +319,6 @@ a{
 =======
 }
 >>>>>>> parent of eaf1572... urpade
+=======
+}
+>>>>>>> parent of 9cdaf12... Item, doc

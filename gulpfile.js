@@ -29,7 +29,6 @@ gulp.task('css', function(){
   return gulp.src([
     'node_modules/normalize.css/normalize.css',
     'node_modules/swiper/swiper-bundle.css',
-    'assest/css/jquery.rateyo.css',
     
     // 'node_modules/rateyo/lib/es/rateyo.css',
     // 'node_modules/ion-rangeslider/css/ion.rangeSlider.min.css',
