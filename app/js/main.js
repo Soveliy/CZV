@@ -1,3 +1,7 @@
+
+window.addEventListener('load', function() {
+  
+
 // $('.main-slider .swiper-container').each(function(){
 //     var main_slider = new Swiper(this, {
 
@@ -5,7 +9,7 @@
 
 // const { default: Swiper } = require("swiper");
 
-     
+
 //         navigation: {
 //             nextEl: $(this).parent().find('.swiper-button-next'),
 //             prevEl: $(this).parent().find('.swiper-button-prev'),
@@ -19,112 +23,234 @@
 // });
 
 var aboutSlider = new Swiper('.main-slider .swiper-container', {
-    pagination: {
-        el: '.main-slider .swiper-pagination',
-        type: 'fraction',
-      },
-      navigation: {
-        nextEl: '.main-slider .swiper-button-next',
-        prevEl: '.main-slider .swiper-button-prev',
-      },
-  });
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-// const sliders = document.querySelectorAll('.swiper-container');
-
-// sliders.forEach((el) => {
-// 	let swiper = new Swiper(el, {
-// 		slidesPerView: 3,
-// 		spaceBetween: 10,
-// 		loop: true,
-// 		pagination: {
-// 			el: el.querySelector('.swiper-pagination'),
-// 			clickable: true,
-// 		},
-// 		navigation: {
-// 			nextEl: el.querySelector('.swiper-button-next'),
-// 			prevEl: el.querySelector('.swiper-button-prev'),
-// 		},
-// 	});
-// });
-=======
->>>>>>> parent of 9cdaf12... Item, doc
-=======
->>>>>>> parent of 162c1c2... Нормальынй комит
-$('.content-slider').each(function(){
-  if($(this).hasClass('price__slider') || $(this).hasClass('questions__slider')){
-    var contentSlider = new Swiper(this, {    
-      spaceBetween: 60,
-      slidesPerView: 1,
-      navigation: {
-        nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
-        prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
-      },
-    });
-  } else if($(this).hasClass('reviews__slider')){
-    var contentSlider = new Swiper(this, {    
-      spaceBetween: 30,
-      slidesPerView: 3,
-      navigation: {
-        nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
-        prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
-      },
-    });
-  } else if ($(this).hasClass('gallery__slider')){
-    var contentSlider = new Swiper(this, {    
-      spaceBetween: 30,
-      slidesPerView: 3,
-      navigation: {
-        nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
-        prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
-      },
-    });
-  } else if($(this).hasClass('articles__slider')){
-    var contentSlider = new Swiper(this, {    
-      spaceBetween: 10,
-      slidesPerView: 4,
-      navigation: {
-        nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
-        prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
-      },
-    });
-  } else {
-    var contentSlider = new Swiper(this, {    
-      spaceBetween: 60,
-      slidesPerView: 2,
-      navigation: {
-        nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
-        prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
-      },
-    });
-  }
-  
+  pagination: {
+    el: '.main-slider .swiper-pagination',
+    type: 'fraction',
+  },
+  navigation: {
+    nextEl: '.main-slider .swiper-button-next',
+    prevEl: '.main-slider .swiper-button-prev',
+  },
 });
+
+// Slider
+
+// $('.content-slider').each(function () {
+//   var contentSlider = new Swiper(this, {
+//     spaceBetween: 60,
+//     slidesPerView: 2,
+//     navigation: {
+//       nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
+//       prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
+//     },
+//     breakpoints: {
+//       320: {
+//         slidesPerView: 1,
+//         spaceBetween: 20
+//       },
+//       1024: {
+//         slidesPerView: 2,
+//         spaceBetween: 40
+//       }
+//     }
+//   });
+
+// });
+
+// Price slider
+
+$('.content-slider.price__slider').each(function(){
+  var contentSlider = new Swiper(this, {
+    spaceBetween: 60,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
+      prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
+    },
+  });
+});
+
+// Question slider
+
+$('.content-slider.questions__slider').each(function(){
+  var contentSlider = new Swiper(this, {
+    spaceBetween: 60,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
+      prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
+    },
+  });
+});
+
+// Reviews slider
+
+$('.content-slider.reviews__slider').each(function(){
+  var contentSlider = new Swiper(this, {
+    spaceBetween: 30,
+    slidesPerView: 3,
+    navigation: {
+      nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
+      prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      1025: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      }
+    }
+  });
+});
+
+// Gallery slider
+
+$('.content-slider.gallery__slider').each(function(){
+  var contentSlider = new Swiper(this, {
+    spaceBetween: 30,
+    slidesPerView: 3,
+    navigation: {
+      nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
+      prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      }
+    }
+  });
+});
+
+// Articles slider
+
+$('.content-slider.articles__slider').each(function(){
+  var contentSlider = new Swiper(this, {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    navigation: {
+      nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
+      prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 0
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      }
+    }
+
+  });
+});
+
+// Articles slider
+
+$('.content-slider.methodology-slider__slider').each(function(){
+  var contentSlider = new Swiper(this, {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    navigation: {
+      nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
+      prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      }
+    }
+
+  });
+});
+
+// Specialists slider
+
+$('.content-slider.specialists__slider').each(function(){
+  var contentSlider = new Swiper(this, {
+    spaceBetween: 30,
+    slidesPerView: 3,
+    navigation: {
+      nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
+      prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      1025: {
+        slidesPerView: 3,
+      }
+    }
+  });
+});
+
+// Video slider
+
+$('.content-slider.video-slider__slider').each(function(){
+  var contentSlider = new Swiper(this, {
+    spaceBetween: 30,
+    slidesPerView: 3,
+    navigation: {
+      nextEl: $(this).prev().find('.content-slider__arrow-right')[0],
+      prevEl: $(this).prev().find('.content-slider__arrow-left')[0],
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      1025: {
+        slidesPerView: 3,
+      }
+    }
+  });
+});
+
+
+
 
 //Table tips
 
-$('.price__icon-container').mouseover(function(){
+$('.price__icon-container').mouseover(function () {
   $(this).find('.price__tip').addClass('active');
 });
-$('.price__icon-container').mouseleave(function(){
+$('.price__icon-container').mouseleave(function () {
   $(this).find('.price__tip').removeClass('active');
 });
 
 
-//Dropdown
+//FAQ dropdown
 
-function dropdown(selectorTitle, activeClass){
-  $(selectorTitle).click(function () {
+function dropdown(selectorTile, activeClass){
+  $(selectorTile).click(function () {
     $(this).toggleClass(activeClass);
     $(this).next().toggleClass(activeClass).slideToggle();
   });
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-dropdown('.questions-dropdown__title-block', 'active')
+dropdown('.questions-dropdown__title-block', 'active');
+dropdown('.price-page__item-title', 'active');
+dropdown('.glossary-item__title', 'active');
+
+
 
 // rate
 $('.rate').each(function () {
@@ -134,13 +260,7 @@ $('.rate').each(function () {
     starWidth: "22px"
   });
 });
-$(".callback-js").click(function(){
-    $("#callback-modal").arcticmodal();
-  });
-  $(".reception-js").click(function(){
-    $("#reception-modal").arcticmodal();
-  });
-  
+
 
 //Timer
 
@@ -160,11 +280,7 @@ $(".callback-js").click(function(){
         'seconds': seconds
       };
     }
-    }  
-  });
-
-
-
+  
     function getZero(num) {
       if (num >= 0 && num < 10) {
         return '0' + num;
@@ -203,54 +319,25 @@ $(".callback-js").click(function(){
   
   }
 
+  
+baguetteBox.run('.gallery__slider .swiper-wrapper');
+
+
 timer('.action--1 .timer', '2020-10-15');
 timer('.action--2 .timer', '2020-11-15');
 timer('.action--3 .timer', '2020-12-15');
-=======
-$('.questions-dropdown__title-block').click(function(){
-  $(this).toggleClass('active');
-  $(this).next().toggleClass('active').slideToggle();
-  $(this).find('.questions-dropdown__arrow-icon').toggleClass('active');
-});
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-$('.options-buttons__search-btn').click(function(){
-    $(this).next().toggleClass('js-active');
-  });
-  
+$('.review-post__select').niceSelect();
 
+$('.review-post__form').validate({
 
-=======
->>>>>>> parent of 162c1c2... Нормальынй комит
+  messages:{
+    login:{
+      required: "",
+   }    
+  }
 
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-$('.questions-dropdown__title-block').click(function(){
-  $(this).toggleClass('active');
-  $(this).next().toggleClass('active').slideToggle();
-  $(this).find('.questions-dropdown__arrow-icon').toggleClass('active');
 });
 
 
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-$('.questions-dropdown__title-block').click(function(){
-  $(this).toggleClass('active');
-  $(this).next().toggleClass('active').slideToggle();
-  $(this).find('.questions-dropdown__arrow-icon').toggleClass('active');
 });
-
-
-<<<<<<< HEAD
-  $(".callback-js").click(function(){
-    $("#callback-modal").arcticmodal();
-  });
-  $(".reception-js").click(function(){
-    $("#reception-modal").arcticmodal();
-  });
-=======
-
-=======
->>>>>>> parent of 162c1c2... Нормальынй комит
->>>>>>> parent of 9cdaf12... Item, doc

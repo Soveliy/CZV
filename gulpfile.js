@@ -29,8 +29,11 @@ gulp.task('css', function(){
   return gulp.src([
     'node_modules/normalize.css/normalize.css',
     'node_modules/swiper/swiper-bundle.css',
-    
-    // 'node_modules/rateyo/lib/es/rateyo.css',
+    'node_modules/rateyo/lib/es/rateyo.css',
+    'node_modules/baguettebox.js/dist/baguetteBox.css',
+    'assest/css/jquery.rateyo.css',
+    'assest/css/nice-select.css',
+    'assest/css/validation.css',
     // 'node_modules/ion-rangeslider/css/ion.rangeSlider.min.css',
     // 'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css',
   ])
@@ -52,16 +55,13 @@ gulp.task('script', function(){
 gulp.task('js', function(){
   return gulp.src([
     'node_modules/swiper/swiper-bundle.js',
-<<<<<<< HEAD
-<<<<<<< HEAD
+    'node_modules/baguettebox.js/dist/baguetteBox.js',
     'assest/js/mask.js',
     'assest/js/jquery.validate.min.js',
     'assest/js/jquery.arcticmodal.js',
-=======
->>>>>>> parent of 9cdaf12... Item, doc
-=======
->>>>>>> parent of 162c1c2... Нормальынй комит
-    // 'node_modules/rateyo/lib/iife/rateyo.js',
+    'assest/js/jquery.rateyo.js',
+    'assest/js/jquery.nice-select.min.js',
+    'assest/js/galleria.js',
     // 'node_modules/ion-rangeslider/js/ion.rangeSlider.min.js',
   ])
     

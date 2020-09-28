@@ -2,30 +2,37 @@
 @import "_vars";
 @import "_libs";
 @import "_fonts";
+@import 'baguettebox.js/dist/baguetteBox.min.css';
 
-.swiper-pagination-fraction{
+.swiper-pagination-fraction {
     position: static;
     width: auto;
 }
-.swiper-button-next,.swiper-button-prev{
+
+.swiper-button-next,
+.swiper-button-prev {
     position: static;
     margin: 0;
-    &:before,&:after{
+
+    &:before,
+    &:after {
         display: none;
     }
-    svg{
-       width: 100%;
-       height: 100%;
-       transition: $transition;
-       stroke: $white;
-       
-   }
+
+    svg {
+        width: 100%;
+        height: 100%;
+        transition: $transition;
+        stroke: $white;
+
+    }
 }
 
-.logo{
+.logo {
     width: 235px;
     height: 53px;
-    &__image{
+
+    &__image {
         display: block;
         height: 100%;
         width: 100%;
@@ -34,391 +41,124 @@
     }
 }
 
-.header{
+.header {
     box-sizing: border-box;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    padding: 11px 0;
-    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.16);
-
-    &__logo{
-        margin-right: auto;
-        @include for-md(){
-            width: 177px;
-            height: 41px;
-        }
-    }
-    &__buttons{
-        display: none;
-        @include for-md(){
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        &-item{
-            position: relative;
-            z-index: 50;
-            &+&{
-                margin-left: 15px;
-            }
-        }
-        &-item-icon{
-            position: relative;
-            z-index: 50;
-            height: 46px;
-            width: 46px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-sizing: border-box;
-            padding: 12px;
-            transition: $transition;
-            
-            &:active{
-                background-color: $purple;
-            }
-        }
-    }
+    padding: 14px 0;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.16);
 
     &__row {
-=======
-    padding: 14px 0;
-    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.16);
-    &__row{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-    padding: 14px 0;
-    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.16);
-    &__row{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-    padding: 14px 0;
-    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.16);
-    &__row{
->>>>>>> parent of 9cdaf12... Item, doc
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    &__btn{
-        &--on-desktop{
-            @include for-md(){
-                display: none;
-            }
-        }
-    }
-    @include for-md(){
-        background-color: #F1F1F1;
-    }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-.mobile-buttons{
-    position: absolute;
-    z-index: 20;
-    top: 100%;
-    left: 50%;
-    margin-top: 13px;
-    transform: translateX(-50%);
-    display: none;
-    width: 178px;
-    border-radius: 10px;
-    background-color: $white;
-    padding: 1px;
-    box-sizing: border-box;
-    &:before{
-        content: '';
-        position: absolute;
-        border: 15px solid transparent;
-        border-bottom: 15px solid #fff;
-        top: -25px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -1;
-    }
-    &__item{
-=======
-.main-menu{
-    > ul {
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-.main-menu{
-    > ul {
->>>>>>> parent of 9cdaf12... Item, doc
-        display: flex;
-        align-items: center;
-        padding: 5px 5px 5px 10px;
-        font-size: 14px;
-        line-height: 17px;
-        color: #2B2E34;
-        transition: $transition;
 
-        &:first-child{
-            border-radius: 10px 10px 0 0;
-        }
-        &:last-child{
-            border-radius: 0 0 10px 10px;
-        }
-
-        &-edit{
-           .mobile-buttons__icon{
-            background-color: #007FC3;
-
-            svg{
-                fill: $white;
-            }
-           } 
-
-           &:active{
-            background-color: #007FC3;
-            color: $white;
-            .mobile-buttons__icon{
-                background-color: $white;
-    
-                svg{
-                    fill: #007FC3;
-                }
-               } 
-        }
-        }
-        &-call{
-            .mobile-buttons__icon{
-             background-color: #DF7FB1;
- 
-             svg{
-                 fill: $white;
-             }
-            } 
-            &:active{
-                background-color: #DF7FB1;
-                color: $white;
-                .mobile-buttons__icon{
-                    background-color: $white;
-        
-                    svg{
-                        fill: #DF7FB1;
-                    }
-                   } 
-            }
-            
-         }
-         &-whatsup{
-            .mobile-buttons__icon{
-             background-color: #1BAC00;
- 
-             svg{
-                 fill: $white;
-             }
-            } 
-            &:active{
-                background-color: #1BAC00;
-                color: $white;
-                .mobile-buttons__icon{
-                    background-color: $white;
-        
-                    svg{
-                        fill: #1BAC00;
-                    }
-                   } 
-            }
-         }
-         &-viber{
-            .mobile-buttons__icon{
-             background-color: #8800FF;
- 
-             svg{
-                 fill: $white;
-             }
-            } 
-
-            &:active{
-                background-color: #8800FF;
-                color: $white;
-                .mobile-buttons__icon{
-                    background-color: $white;
-        
-                    svg{
-                        fill: #8800FF;
-                    }
-                   } 
-            }
-         }
-    }
-    &__icon{
-        height: 35px;
-        width: 35px;
-        border-radius: 50%;
-        flex-shrink: 0;
-        margin-right: 10px;
-        box-sizing: border-box;
-        padding: 7px;
-        transition: $transition;
-
-       
-
-        svg{
-            max-height: 100%;
-            max-width: 100%;
-        }
-    }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-}
-.burger{
-    position: relative;
-    display: none;
-    width: 20px;
-    height: 18px;
-    flex-shrink: 0;
-    cursor: pointer;
-    margin-right: 20px;
-    flex-shrink: 0;
-    &__line{
-        width: 100%;
-        height: 3px;
-        background-color: #707070;
-        border-radius: 2px;
-        transition: $transition;
-        &:nth-child(2){
-            width: 80%;
-        }
-       
-    }
-
-    &.js-active{
-        .burger__line{
-           
-            &:nth-child(1){
-                position: absolute;
-                transform: translateY(-50%) rotate(45deg);
-                top: 50%;
-            }
-            &:nth-child(2){
-                opacity: 0;
-            }
-              &:nth-child(3){
-                position: absolute;
-                transform: translateY(-50%) rotate(-45deg);
-                top: 50%;
-            }
-        }
-    }
-    @include for-md(){
-        display: flex;
-        flex-direction:column;
-        justify-content: space-between;
-    }
-}
-.main-menu{
-    @include for-md(){
-        display: none;
-    }
-=======
-.main-menu{
->>>>>>> parent of 9cdaf12... Item, doc
-    > ul {
+.main-menu {
+    >ul {
         display: flex;
     }
-    > ul > li{
+
+    >ul>li {
         margin: 0 12px;
     }
-=======
-    > ul > li{
-        margin: 0 12px;
-    }
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-    > ul > li{
-        margin: 0 12px;
-    }
->>>>>>> parent of 9cdaf12... Item, doc
-    > ul > li > a{
+
+    >ul>li>a {
         font-size: 16px;
         line-height: 21px;
         font-weight: 700;
         color: $dark_blue;
         transition: $transition;
-        &:hover{
+
+        &:hover {
             color: $blue;
         }
-        &:active{
+
+        &:active {
             color: $purple;
         }
     }
 }
-.main-slider{
+
+.main-slider {
     position: relative;
     color: $white;
-    &__item{
+
+    &__item {
         background-size: cover;
         background-position: center center;
-        background-repeat: no-repeat ;
+        background-repeat: no-repeat;
         padding: 24px 0;
 
-        &--main-page{
+        &--main-page {
             padding-bottom: 124px;
         }
     }
-    &__dot{
+
+    &__dot {
         height: 8px;
         width: 8px;
         background-color: $white;
         border-radius: 50%;
-        &--top{
-           margin: 0 0 17px 17px;
+
+        &--top {
+            margin: 0 0 17px 17px;
         }
     }
-    &__help-arrow{
+
+    &__help-arrow {
         width: 7px;
         height: 8.5px;
         background: url(../img/icons/arrow_bot.svg) no-repeat center center;
         background-size: contain;
         margin: 0 0 17px 17px;
     }
-    &__stock{
+
+    &__stock {
         font-size: 49px;
         line-height: 58px;
         font-weight: 500;
         text-transform: uppercase;
         color: $pink;
     }
-    &__stock-value{
+
+    &__stock-value {
         font-size: 64px;
         line-height: 77px;
         letter-spacing: -2px;
     }
-    &__stock-text{
+
+    &__stock-text {
         font-size: 38px;
         line-height: 41px;
     }
-    &__btn{
+
+    &__btn {
         margin-top: 23px;
         padding: 15px 35px;
         border-radius: 40px;
     }
-    &__arrow{
+
+    &__arrow {
         width: 32px;
         height: 30px;
-       &:hover{
-           svg{
-               stroke: $purple;
-           }
-       }
+
+        &:hover {
+            svg {
+                stroke: $purple;
+            }
+        }
     }
 
-    &__navigation{
-        &-row{
+    &__navigation {
+        &-row {
             display: flex;
             align-items: center;
             padding-left: 17px;
             box-sizing: border-box;
         }
-        &--main-page{
-           
+
+        &--main-page {
+
             position: absolute;
             z-index: 20;
             bottom: 24px;
@@ -426,23 +166,27 @@
             width: 100%;
         }
     }
-    &__pagination{
+
+    &__pagination {
         display: flex;
         align-items: center;
         font-size: 0;
 
-        &--main-page{
-            margin:  0 0 0 15px;
+        &--main-page {
+            margin: 0 0 0 15px;
         }
-        > span{
+
+        >span {
             font-size: 16px;
             line-height: 20px;
-            &:before{
+
+            &:before {
                 content: '0';
             }
         }
-        .swiper-pagination-current{
-            &:after{
+
+        .swiper-pagination-current {
+            &:after {
                 content: '';
                 display: inline-block;
                 vertical-align: middle;
@@ -453,30 +197,29 @@
             }
         }
     }
-    &__line{
+
+    &__line {
         width: 203px;
         height: 2px;
         background-color: $white;
         margin: 0 15px;
     }
-    &__arrows{
+
+    &__arrows {
         display: flex;
         align-items: center;
     }
-    &__arrow.swiper-button-next{
+
+    &__arrow.swiper-button-next {
         margin-left: 15px;
     }
 
 
 }
-.head-block{
+
+.head-block {
     display: flex;
     align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     &--empty{
         position: relative;       
         .head-block__line{
@@ -522,29 +265,6 @@
     }
 
     &__title {
-=======
-    &__title{
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
-    @include for-md{
-        flex-direction: column;
-    }
-    &__title{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-    @include for-md{
-        flex-direction: column;
-    }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-    &__title{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-    @include for-md{
-        flex-direction: column;
-    }
-    &__title{
->>>>>>> parent of 9cdaf12... Item, doc
         position: relative;
         font-size: 40px;
         line-height: 44px;
@@ -553,7 +273,8 @@
         box-sizing: border-box;
         margin-right: 9px;
         flex-shrink: 0;
-        &:before{
+
+        &:before {
             content: '';
             position: absolute;
             left: 0;
@@ -564,50 +285,38 @@
             background: url(../img/icons/title-icon.svg) no-repeat center center;
             background-size: contain;
         }
-        &--bold{
+
+        &--bold {
             font-weight: 700;
         }
-        &--black{
+
+        &--black {
             color: $black;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-md {
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
             text-align: center;
             padding-left: 0;
             margin-right: 0;
-            &::before{
+
+            &::before {
                 display: none;
             }
         }
-        @include for-md-mob{
+
+        @include for-md-mob {
             font-size: 32px;
             line-height: 34px;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__line{
+
+    &__line {
         position: relative;
         width: 100%;
         height: 2px;
         background-color: $dark_blue;
-        &:before{
+
+        &:before {
             content: '';
             position: absolute;
             left: 0;
@@ -617,86 +326,53 @@
             width: 6px;
             border-radius: 50%;
             background-color: $dark_blue;
-            
+
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-md {
             display: none;
-=======
-        @include for-md{
-            display: none;  
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
-            display: none;  
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
-            display: none;  
->>>>>>> parent of 9cdaf12... Item, doc
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__btn{
+
+    &__btn {
         flex-shrink: 0;
         margin-left: 29px;
         padding: 9.5px 25px;
         border-radius: 40px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-md {
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
             display: none;
         }
     }
-    &__btn-mobile-block{
+
+    &__btn-mobile-block {
         display: none;
-        @include for-md{
+
+        @include for-md {
             display: block;
             padding: 0 5px;
             background-color: $white;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 }
-.features{
+
+.features {
     padding: 60px 0;
 
-    &__row{
+    &__row {
         margin-top: 121px;
         margin-right: -30px;
         display: flex;
         flex-wrap: wrap;
     }
-    &__item-container{
+
+    &__item-container {
         width: 33.3%;
         margin-bottom: 141px;
-        &:nth-child(2n + 1){
-            .features-item{
-                &:before{
+
+        &:nth-child(2n + 1) {
+            .features-item {
+                &:before {
                     content: '';
                     position: absolute;
                     left: 47px;
@@ -707,14 +383,15 @@
                     background: url(../img/features/features-before-pink.svg);
                 }
 
-                &__icon-container{
+                &__icon-container {
                     border-color: $purple_border;
                 }
             }
         }
-        &:nth-child(2n){
-            .features-item{
-                &:before{
+
+        &:nth-child(2n) {
+            .features-item {
+                &:before {
                     content: '';
                     position: absolute;
                     left: 45px;
@@ -725,14 +402,15 @@
                     background: url(../img/features/features-before-blue-1.svg);
                 }
 
-                &__icon-container{
+                &__icon-container {
                     border-color: $blue_border;
                 }
             }
         }
-        &:nth-child(4n){
-            .features-item{
-                &:before{
+
+        &:nth-child(4n) {
+            .features-item {
+                &:before {
                     content: '';
                     position: absolute;
                     left: 27px;
@@ -743,7 +421,7 @@
                     background: url(../img/features/features-before-blue-2.svg);
                 }
 
-                &__icon-container{
+                &__icon-container {
                     border-color: $blue_border;
                 }
             }
@@ -751,15 +429,17 @@
     }
 }
 
-.features-item{
+.features-item {
     position: relative;
     display: flex;
-    &:before{
+
+    &:before {
         background-position: center;
         background-repeat: no-repeat;
         z-index: -1;
     }
-    &__icon-container{
+
+    &__icon-container {
         width: 98px;
         height: 98px;
         border-radius: 50%;
@@ -771,33 +451,35 @@
         margin-right: 29px;
         background-color: $white;
     }
-    &__icon{
+
+    &__icon {
         max-width: 100%;
     }
 
-    &__title{
+    &__title {
         font-size: 26px;
         line-height: 28px;
         color: $dark_green;
         font-weight: 400;
     }
-    &__desc{
+
+    &__desc {
         font-size: 16px;
         line-height: 22px;
         color: $dark_green;
     }
 }
 
-.form{
+.form {
     position: relative;
-    
-   
-    &__title-container{
+
+
+    &__title-container {
         text-align: center;
         padding: 0 20px;
         box-sizing: border-box;
 
-        &--abs{
+        &--abs {
             position: absolute;
             left: 0;
             width: 100%;
@@ -805,7 +487,8 @@
             z-index: 10;
         }
     }
-    &__title{
+
+    &__title {
         display: inline-flex;
         font-size: 32px;
         line-height: 40px;
@@ -815,28 +498,33 @@
         background-color: $white;
         box-sizing: border-box;
     }
-   
-    &--bordered{
+
+    &--bordered {
         position: relative;
         border-radius: 20px;
         box-sizing: border-box;
         padding: 75px 25px 20px;
         border: 1px solid;
     }
-    &--border-purple{
+
+    &--border-purple {
         border-color: $purple_border2;
     }
-    &--border-blue{
+
+    &--border-blue {
         border-color: $blue_border;
     }
-    &__input-container{
+
+    &__input-container {
         position: relative;
         z-index: 10;
-        &+&{
+
+        &+& {
             margin-top: 40px;
         }
     }
-    &__input{
+
+    &__input {
         height: 48px;
         display: block;
         width: 100%;
@@ -849,16 +537,18 @@
         line-height: 23px;
         background-color: $white;
         color: $dark_blue;
-        &::placeholder{
+
+        &::placeholder {
             color: $blue;
         }
 
-        &:focus{
+        &:focus {
             color: $dark_blue;
             border-color: $dark_blue;
         }
     }
-    &__textarea{
+
+    &__textarea {
         height: 132px;
         display: block;
         width: 100%;
@@ -871,23 +561,26 @@
         line-height: 23px;
         background-color: $white;
         color: $dark_blue;
-        &::placeholder{
+
+        &::placeholder {
             color: $blue;
         }
 
-        &:focus{
+        &:focus {
             color: $dark_blue;
             border-color: $dark_blue;
         }
     }
-    &__btn-container{
+
+    &__btn-container {
         position: relative;
         z-index: 10;
         margin-top: 35px;
         display: flex;
         justify-content: center;
     }
-    &__btn{
+
+    &__btn {
         position: relative;
         z-index: 10;
         font-size: 20px;
@@ -896,7 +589,8 @@
         padding: 11px 31px;
         border-radius: 26px;
     }
-    &__politics{
+
+    &__politics {
         position: relative;
         z-index: 10;
         margin-top: 30px;
@@ -905,13 +599,15 @@
         text-align: center;
         color: $politics_color;
     }
-    &__phone-container{
+
+    &__phone-container {
         position: relative;
         z-index: 10;
         margin: 23px 0 82px;
         text-align: center;
     }
-    &__phone-link{
+
+    &__phone-link {
         font-size: 52px;
         line-height: 64px;
         color: $dark_blue;
@@ -919,28 +615,30 @@
     }
 }
 
-.footer-forms{
+.footer-forms {
     padding-bottom: 126px;
-    &__row{
+
+    &__row {
         display: flex;
         justify-content: center;
-        @include for-md(){
-            flex-direction: column-reverse;
-        }
     }
-    &__item{
+
+    &__item {
         position: relative;
+        width: 48%;
         margin: 0 1%;
-        .form:after{
+
+        .form:after {
             content: '';
             position: absolute;
             background-size: contain;
         }
-        &--purple{
-            .form{
-                &:after{
+
+        &--purple {
+            .form {
+                &:after {
                     top: 20px;
-                    left: -74px;
+                    left: 0;
                     width: 625px;
                     height: 547px;
                     background: url(../img/footer-forms/form-item-1.svg) no-repeat center center;
@@ -948,9 +646,10 @@
                 }
             }
         }
-        &--blue{
-            .form{
-                &:after{
+
+        &--blue {
+            .form {
+                &:after {
                     top: 20px;
                     left: 0;
                     width: 638px;
@@ -963,193 +662,155 @@
     }
 }
 
-.free-conslut{
+.free-conslut {
     padding-top: 110px;
     padding-bottom: 80px;
-    p{
+
+    p {
         position: relative;
         z-index: 10;
         font-size: 20px;
         line-height: 26px;
         text-align: center;
         color: $dark_blue;
-      
-    }
-    p + p{
-        margin-top: 10px;
-    }
-    
-}
-.footer{
-    background-color: $grey;
-    padding: 50px 0 100px;
-    @include for-md(){
-        padding: 25px 0;
+
     }
 
-    &__row{
+    p+p {
+        margin-top: 10px;
+    }
+
+}
+
+.footer {
+    background-color: $grey;
+    padding: 50px 0 100px;
+
+    &__row {
         display: flex;
         align-items: flex-start;
-        @include for-md(){
-            flex-direction: column-reverse;
-        }
     }
-    &__left{
+
+    &__left {
         width: 166px;
         flex-shrink: 0;
         margin-right: 30px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-        @include for-md(){
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            margin: 0;
-            margin-top: 46px;
-            padding-top: 26px;
-            border-top: 1px solid $dark_blue;
-            box-sizing: border-box;
-
-        }
-        @include for-sm(){
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-=======
->>>>>>> parent of 9cdaf12... Item, doc
-=======
->>>>>>> parent of 9cdaf12... Item, doc
     }
-    &__logo{
+
+    &__logo {
         height: 38px;
         width: 166px;
         margin-bottom: 42px;
-        &-img{
+
+        &-img {
             display: block;
             height: 100%;
             width: 100%;
             background: url(../img/icons/logo_foot.svg) center center no-repeat;
             background-size: contain;
         }
-        
     }
-    &__text{
+
+    &__text {
         font-size: 11px;
         line-height: 14px;
         color: $grey2;
-        a{
+
+        a {
             text-decoration: underline;
-            &:hover{
+
+            &:hover {
                 text-decoration: none;
             }
         }
-        &+&{
-            margin-top: 10px; 
+
+        &+& {
+            margin-top: 10px;
         }
     }
-    &__right{
+
+    &__right {
         width: 100%;
     }
-    &__right-head{
+
+    &__right-head {
         width: 100%;
         display: flex;
         align-items: center;
         padding-bottom: 9px;
         margin-bottom: 17px;
         border-bottom: 1px solid $dark_blue;
-        @include for-sm(){
-            border: 0;
-            padding-bottom: 0;
-            margin-bottom: 35px;
-        }
     }
-    &__list-title{
+
+    &__list-title {
         font-size: 20px;
         line-height: 23px;
         color: $dark_blue;
-        &:nth-child(2){
+
+        &:nth-child(2) {
             margin-left: auto;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
+    }
 
-        @include for-sm(){
-            display: none;
-        }
-=======
->>>>>>> parent of 9cdaf12... Item, doc
-=======
->>>>>>> parent of 9cdaf12... Item, doc
-    }
-    &__messangeres{
+    &__messangeres {
         margin-left: 100px;
-        @include for-sm(){
-            margin: 0 auto;
-        }
     }
-    &__menu-list{
-        &--columns-2{
+
+    &__menu-list {
+        &--columns-2 {
             column-count: 2;
         }
-        &:not(.footer__menu-list--columns-2){
+
+        &:not(.footer__menu-list--columns-2) {
             flex-shrink: 0;
         }
-        li{
+
+        li {
             margin-bottom: 5px;
         }
-        a{
+
+        a {
             font-size: 16px;
             line-height: 20px;
             color: $grey2;
             font-weight: 500;
         }
     }
-    &__right-bottom{
+
+    &__right-bottom {
         display: flex;
         align-items: flex-start;
     }
-    &__contacts{
+
+    &__contacts {
         width: 267.5px;
         flex-shrink: 0;
         margin-left: auto;
-        @include for-sm(){
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0 auto;
-            width: 100%;
-        }
     }
-    &__social{
+
+    &__social {
         margin-bottom: 27px;
-<<<<<<< HEAD
-        @include for-sm(){
-            margin-bottom: 35px;
-        }
-=======
->>>>>>> parent of 9cdaf12... Item, doc
     }
-    &__menu-container{
+
+    &__menu-container {
         display: flex;
         margin-right: 34px;
-        @include for-sm(){
-            display: none;
-        }
     }
 }
 
-.messangeres{
-    &__list{
+.messangeres {
+    &__list {
         display: flex;
         align-items: center;
     }
-    &__item{
-        &+&{
+
+    &__item {
+        &+& {
             margin-left: 14px;
         }
     }
-    &__icon{
+
+    &__icon {
         height: 29px;
         width: 29px;
         display: flex;
@@ -1158,60 +819,68 @@
         transition: $transition;
         box-sizing: border-box;
         padding: 6px;
-        svg{
+
+        svg {
             max-width: 100%;
             fill: $white;
             transition: $transition;
         }
-        &--viber{
+
+        &--viber {
             background-color: #8800FF;
         }
-        &--whatsup{
+
+        &--whatsup {
             background-color: #1BAC00;
         }
     }
-    &__phone{
+
+    &__phone {
         font-size: 22px;
         line-height: 25px;
         color: $dark_blue;
         font-weight: 500;
 
-        &--lit{
+        &--lit {
             font-size: 20px;
             line-height: 23px;
             color: $grey2;
             font-weight: 700;
         }
     }
-    &__callback{
+
+    &__callback {
         display: inline-block;
         font-size: 13px;
         line-height: 17px;
         color: $dark_blue;
         border-bottom: 1px solid $dark_blue;
         cursor: pointer;
-        &:hover{
+
+        &:hover {
             border-color: transparent;
         }
     }
-    
+
 }
 
 
-.social{
-    &__list{
+.social {
+    &__list {
         display: flex;
         align-items: center;
     }
-    &__list-item{
-        &+&{
+
+    &__list-item {
+        &+& {
             margin-left: 14px;
         }
     }
+
     &__link {
         height: 29px;
         width: 29px;
-        
+
         display: flex;
         align-items: center;
         border-radius: 50%;
@@ -1219,7 +888,8 @@
         box-sizing: border-box;
         border: 1px solid $dark_blue;
         padding: 5px;
-        svg{
+
+        svg {
             max-height: 15px;
             max-width: 100%;
             fill: $dark_blue;
@@ -1227,14 +897,16 @@
         }
     }
 }
-.adress{
+
+.adress {
     position: relative;
     box-sizing: border-box;
     padding-left: 43px;
     font-size: 14px;
     line-height: 17px;
     color: $grey2;
-    &:before{
+
+    &:before {
         content: '';
         position: absolute;
         left: 0;
@@ -1244,24 +916,28 @@
         background: url(../img/icons/geo.svg) no-repeat left center;
         background-size: contain;
     }
-    &__link{
+
+    &__link {
         display: inline-block;
         margin-top: 5px;
         font-size: 14px;
         line-height: 17px;
         color: $dark_blue;
         text-decoration: underline;
-        &:hover{
+
+        &:hover {
             text-decoration: none;
         }
     }
 
 }
-.time-work{
+
+.time-work {
     position: relative;
     box-sizing: border-box;
     padding-left: 38px;
-    &:before{
+
+    &:before {
         content: '';
         position: absolute;
         left: 0;
@@ -1271,31 +947,37 @@
         background: url(../img/icons/work-time.svg) no-repeat center left;
         background-size: contain;
     }
-    &__title{
+
+    &__title {
         font-size: 12px;
         line-height: 15px;
         color: $grey2;
     }
-    &__link{
+
+    &__link {
         font-size: 12px;
         line-height: 16px;
         color: $dark_blue;
         border-bottom: 1px dashed $dark_blue;
         transition: $transition;
-        &:hover{
+
+        &:hover {
             border-color: transparent;
         }
     }
 }
-.preheader{
+
+.preheader {
     background-color: $preheader-color;
-    &__row{
+
+    &__row {
         display: flex;
         align-items: center;
         padding: 7px 0 10px 60px;
         box-sizing: border-box;
         justify-content: space-between;
     }
+
     // &__time-work{
     //     margin-right: 83px;
     // }
@@ -1303,116 +985,68 @@
 
 
 
-.services-page{
-    &__container{        
-        color: $black;
-    }
-    
-}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 .service-menu {
     margin-top: 50px;
     margin-bottom: 64px;
-=======
-.service-menu{
-    margin-top: 50px;   
-    margin-bottom: 64px;     
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-.service-menu{
-    margin-top: 50px;   
-    margin-bottom: 64px;     
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-.service-menu{
-    margin-bottom: 64px;     
-<<<<<<< HEAD
->>>>>>> parent of 9cdaf12... Item, doc
     background-color: #F8F8F8;
-    @include for-md{
+
+    @include for-md {
         overflow-x: scroll;
         overflow-y: hidden;
-    }  
-=======
-    background-color: #F8F8F8;    
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-    &__inner{
+    }
+
+    &__inner {
         min-height: 80px;
         display: flex;
         align-items: center;
-<<<<<<< HEAD
-        @include for-md{
+
+        @include for-md {
             width: 1024px;
         }
-=======
-.service-menu{
-    margin-bottom: 64px;     
-    background-color: #F8F8F8;    
-    &__inner{
-        min-height: 80px;
-        display: flex;
-        align-items: center;
-        margin-top: 50px;   
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
-        margin-top: 50px;   
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__item{
+
+    &__item {
         display: flex;
         align-items: center;
         color: $blue;
         transition: $transition;
-        &+&{
+
+        &+& {
             margin-left: 50px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
             @include for-lg {
-=======
-            @include for-lg{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-            @include for-lg{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-            @include for-lg{
->>>>>>> parent of 9cdaf12... Item, doc
                 margin-left: 20px;
             }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
         }
-        &:hover{
+
+        &:hover {
             color: $dark_blue;
-            .service-menu__img-block{
+
+            .service-menu__img-block {
                 border-color: $dark_blue;
             }
-            .service-menu__icon{
+
+            .service-menu__icon {
                 fill: $dark_blue;
             }
         }
-        &:active{
+
+        &:active {
             color: $purple;
-            .service-menu__img-block{
+
+            .service-menu__img-block {
                 border-color: $purple;
             }
-            .service-menu__icon{
+
+            .service-menu__icon {
                 fill: $purple;
             }
         }
     }
-    &__img-block{
+
+    &__img-block {
         margin-right: 9px;
         border-radius: 50%;
         border: 2px solid $blue;
@@ -1423,109 +1057,53 @@
         justify-content: center;
         transition: $transition;
     }
-    &__icon{
+
+    &__icon {
         max-width: 25px;
         fill: $blue;
         transition: $transition;
     }
 }
 
-.methodology-slider{
-    &__title{
+.methodology-slider {
+    &__title {
         margin-right: 118px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-lg {
             margin-right: 5px;
-=======
-        @include for-lg{
-            margin-right: 5px;    
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-lg{
-            margin-right: 5px;    
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-lg{
-            margin-right: 5px;    
->>>>>>> parent of 9cdaf12... Item, doc
         }
-        @include for-md{
-            margin-right: 0;
-        }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-    }
-    &__inner{
-        margin-top: 60px;
-    }
-    &__slider{
-        margin-top: 60px;
-        margin-bottom: 87px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-        @include for-sm {
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
-            margin-bottom: 35px;
-        }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-    }
-    .swiper-slide{
-        width: 557px !important;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-md {
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
+            margin-right: 0;
+        }
+    }
+
+    &__inner {
+        margin-top: 60px;
+    }
+
+    &__slider {
+        margin-top: 60px;
+        margin-bottom: 87px;
+
+        @include for-sm {
+            margin-bottom: 35px;
+        }
+    }
+
+    .swiper-slide {
+        width: 557px !important;
+
+        @include for-md {
             width: 100% !important;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
-    }
-    .swiper-slide{
-        width: 557px !important;
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 }
-.methodology-item{
+
+.methodology-item {
     max-width: 557px;
     width: 100%;
     margin-right: 30px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
     @include for-md {
         margin: 0 auto;
@@ -1533,69 +1111,27 @@
     }
 
     &__inner {
-=======
-    &__inner{
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
-    @include for-md{
-        margin: 0 auto;
-        max-width: 346px;
-    }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-    &__inner{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-    @include for-md{
-        margin: 0 auto;
-        max-width: 346px;
-    }
-    &__inner{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-    @include for-md{
-        margin: 0 auto;
-        max-width: 346px;
-    }
-    &__inner{
->>>>>>> parent of 9cdaf12... Item, doc
         display: flex;
         border: 1px solid $dark_blue;
         border-radius: 22px;
         overflow: hidden;
         padding-right: 18px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-md {
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
             flex-direction: column;
             padding-right: 0;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__img-block{
+
+    &__img-block {
         position: relative;
         flex-shrink: 0;
         width: 221px;
         height: 310px;
         // border-radius: 22px 145px 145px 22px;
         background-color: transparent;
-        &:before{
+
+        &:before {
             content: '';
             position: absolute;
             width: 256px;
@@ -1606,478 +1142,277 @@
             top: 0;
             left: 0;
             z-index: -1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
             @include for-md {
-=======
-            @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-            @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-            @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
                 width: 100%;
                 height: 346px;
                 top: -60px;
                 transform: rotate(90deg);
             }
         }
-        @include for-md{
+
+        @include for-md {
             width: 100%;
             height: 245px;
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
         }
     }
-    &__img{
+
+    &__img {
         display: block;
         width: 100%;
         height: 100%;
         background-color: transparent;
         border-radius: 22px 92px 92px 22px;
-<<<<<<< HEAD
-<<<<<<< HEAD
         object-fit: cover;
         object-position: 0 70%;
-        @include for-md{
+
+        @include for-md {
             border-radius: 22px 22px 92px 92px;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__text-block{
+
+    &__text-block {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         margin-left: 42px;
         padding-top: 10px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-md {
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
             padding: 10px 5px;
             margin-left: 0;
             text-align: center;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__title{
+
+    &__title {
         font-size: 28px;
         font-weight: 700;
         line-height: 32px;
         color: $dark_blue;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-md {
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
             margin-top: 32px;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__description{
+
+    &__description {
         margin-top: 5px;
         font-size: 16px;
         line-height: 22px;
         color: #181716;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-md {
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
             margin-top: 10px;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-    } 
-    &__btn-container{
+    }
+
+    &__btn-container {
         align-self: flex-end;
         margin-top: auto;
         margin-bottom: 25px;
-<<<<<<< HEAD
-        @include for-md{
+
+        @include for-md {
             margin-bottom: 32px;
             margin-top: 21px;
             align-self: center;
         }
-=======
-    } 
-    &__btn-container{
-        align-self: flex-end;
-        margin-top: auto;
-        margin-bottom: 25px;
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__more{
+
+    &__more {
         // position: absolute;
         margin-top: 14px;
         margin-left: auto;
         border-color: $dark_blue;
         color: $dark_blue;
+
         // bottom: 25px;
         // right: 18px;
-        &:hover{
+        &:hover {
             background-color: $dark_blue;
             border-color: $dark_blue;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-md {
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
             margin-top: 0;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 }
 
-.price{
-    &__slider{
+.price {
+    .content-slider__arrows {
+        position: relative;
+    }
+
+    .content-slider__arrow {
+        position: static;
+    }
+
+    .content-slider__arrow .icon {
+        display: none;
+    }
+
+    .content-slider__arrow-left::before {
+        width: 100%;
+        left: 0;
+    }
+
+    .content-slider__arrow-right::before {
+        width: 100%;
+        left: 0;
+    }
+
+    &__slider {
         margin-top: 62px;
         overflow: hidden !important;
         padding-bottom: 70px;
-<<<<<<< HEAD
-        @include for-tiny-tablet{
+
+        @include for-tiny-tablet {
             margin-top: 34px;
         }
-=======
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
 
-.price{
-    &__slider{
-        margin-top: 62px;
-        overflow: hidden !important;
-        padding-bottom: 70px;
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-    }
-=======
->>>>>>> parent of 9cdaf12... Item, doc
-=======
->>>>>>> parent of 9cdaf12... Item, doc
-    &__table{
+    &__table {
         border-spacing: 0;
         border: none;
         width: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-tiny-tablet {
             border-spacing: 1px;
-=======
-        @include for-tiny-tablet{
-            border-spacing: 1px ;
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-tiny-tablet{
-            border-spacing: 1px ;
->>>>>>> parent of 9cdaf12... Item, doc
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
-        @include for-tiny-tablet{
-            border-spacing: 1px ;
-        }
->>>>>>> parent of 9cdaf12... Item, doc
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__tr{
-        &:first-child{
+
+    &__tr {
+        &:first-child {
             background: linear-gradient(270deg, #007fc2 0%, #e57fbc 100%);
         }
-        &:nth-child(2n +1){
-            .price__td{
+
+        &:nth-child(2n +1) {
+            .price__td {
                 background-color: #F3F3F3;
             }
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-tiny-tablet {
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
             display: flex;
             flex-wrap: wrap;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__th{
+
+    &__th {
         padding: 8px 0;
         font-size: 12px;
         line-height: 14px;
         color: $white;
         font-weight: 400;
-        &:first-child{
+
+        &:first-child {
             width: 820px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
             @include for-md {
-=======
-            @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-            @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-            @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
                 width: 55%;
             }
-            @include for-tiny-tablet{
-                width: 100%;
-                border-bottom: 1px solid $white ;
-            }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-        }
-        &:nth-child(2){
-            width: 50px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
             @include for-tiny-tablet {
-=======
-            @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-            @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-            @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
+                width: 100%;
+                border-bottom: 1px solid $white;
+            }
+        }
+
+        &:nth-child(2) {
+            width: 50px;
+
+            @include for-tiny-tablet {
                 width: 0;
             }
         }
-        &:nth-child(3){
-            @include for-tiny-tablet{
+
+        &:nth-child(3) {
+            @include for-tiny-tablet {
                 width: 60%;
-                border-right: 1px solid $white ;
+                border-right: 1px solid $white;
             }
-            
+
         }
-        &:nth-child(4){
-            @include for-tiny-tablet{
+
+        &:nth-child(4) {
+            @include for-tiny-tablet {
                 width: 40%;
             }
         }
-        @include for-tiny-tablet{
+
+        @include for-tiny-tablet {
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 0;
             height: 32px;
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
-        }
-        &:nth-child(2){
-            width: 50px;
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
         }
     }
-    &__td{
+
+    &__td {
         padding: 10px 0;
         text-align: center;
         font-size: 16px;
         line-height: 19px;
-        &:first-child{
+
+        &:first-child {
             padding-left: 50px;
             text-align: left;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
             @include for-md {
-=======
-            @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-            @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-            @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
                 padding-left: 20px;
-                padding-right: 10px; 
+                padding-right: 10px;
             }
-            @include for-tiny-tablet{
+
+            @include for-tiny-tablet {
                 padding-left: 12px;
                 padding-bottom: 7px;
                 width: 100%;
             }
         }
-        &:nth-child(2){
-            @include for-tiny-tablet{
+
+        &:nth-child(2) {
+            @include for-tiny-tablet {
                 width: 11%;
                 padding-left: 0;
             }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
         }
-        &:nth-child(3){
+
+        &:nth-child(3) {
             color: $dark_blue;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
             @include for-tiny-tablet {
                 width: 40%;
-=======
-            @include for-tiny-tablet{
-                width: 40%;                
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-            @include for-tiny-tablet{
-                width: 40%;                
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-            @include for-tiny-tablet{
-                width: 40%;                
->>>>>>> parent of 9cdaf12... Item, doc
             }
         }
-        &:nth-child(4){
-            @include for-tiny-tablet{
-                width: 49%;                
+
+        &:nth-child(4) {
+            @include for-tiny-tablet {
+                width: 49%;
             }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
         }
-        &:nth-child(3){
-            color: $dark_blue;
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-        }
-        &--tip{
+
+        &--tip {
             position: relative;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-tiny-tablet {
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
             display: flex;
             align-items: center;
             justify-content: center;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__link{
+
+    &__link {
         color: $dark_blue;
     }
-    &__swiper-slide{
+
+    &__swiper-slide {
         width: 100% !important;
     }
-    &__icon-container{
+
+    &__icon-container {
         position: relative;
         display: flex;
         align-items: center;
@@ -2087,11 +1422,13 @@
         border-radius: 50%;
         background-color: #F8B2D8;
     }
-    &__icon{
+
+    &__icon {
         height: 7px;
         fill: $white;
     }
-    &__tip{
+
+    &__tip {
         position: absolute;
         display: none;
         font-size: 10px;
@@ -2101,118 +1438,76 @@
         padding: 7px 22px;
         border-radius: 15px;
         background-color: $white;
-        box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.33);
-        -webkit-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.33);
-        -moz-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.33);
+        box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.33);
+        -webkit-box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.33);
+        -moz-box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.33);
         top: 22px;
         z-index: 10;
-        &::before{
+
+        &::before {
             content: '';
             position: absolute;
-            border: 10px solid transparent; 
+            border: 10px solid transparent;
             border-bottom: 10px solid $white;
             top: -20px;
             left: 50%;
             transform: translateX(-50%);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
             @include for-tiny-tablet {
-=======
-            @include for-tiny-tablet{                
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-            @include for-tiny-tablet{                
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-            @include for-tiny-tablet{                
->>>>>>> parent of 9cdaf12... Item, doc
                 left: 5px;
                 transform: translateX(0);
             }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
         }
-        &.active{
+
+        &.active {
             display: block;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-tiny-tablet {
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
             left: -9px;
             padding: 7px 11px;
-            width: 177px;                
+            width: 177px;
             font-size: 14px;
             line-height: 16px;
             border-radius: 5px;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__footnote{
+
+    &__footnote {
         margin-top: -60px;
         font-size: 12px;
         line-height: 14px;
         color: #181716;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-tiny-tablet {
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
             display: none;
         }
     }
-    &__more{
+
+    &__more {
         display: flex;
         align-items: center;
         padding: 5px 14px;
-        &:hover{
-            .price__more-icon-container{
+
+        &:hover {
+            .price__more-icon-container {
                 border-color: $white;
-                
+
             }
-            .price__more-icon{
+
+            .price__more-icon {
                 stroke: $white;
             }
         }
     }
-    &__more-container{
+
+    &__more-container {
         position: relative;
         display: none;
-        justify-content: center;  
-        transition: $transition;      
-        &::before{
+        justify-content: center;
+        transition: $transition;
+
+        &::before {
             content: '';
             position: absolute;
             width: 100%;
@@ -2222,17 +1517,20 @@
             transform: translateY(-50%);
             z-index: -1;
         }
-        @include for-tiny-tablet{
+
+        @include for-tiny-tablet {
             display: flex;
         }
     }
-    &__more-inner{
+
+    &__more-inner {
         display: inline-block;
         background-color: $white;
         padding: 0 14.5px;
     }
-    &__more-icon-container{
-        display: flex;  
+
+    &__more-icon-container {
+        display: flex;
         margin-left: 17px;
         align-items: center;
         justify-content: center;
@@ -2241,129 +1539,52 @@
         border: 1px solid $blue;
         border-radius: 50%;
     }
-    &__more-icon{
+
+    &__more-icon {
         width: 18px;
         height: 18px;
         stroke: $dark_blue;
         transition: $transition;
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 }
 
-.reviews{
-    &__slider{
+.reviews {
+    &__slider {
         margin-top: 60px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-sm {
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
             margin-top: 37px;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__swiper-slide{
+
+    &__swiper-slide {
         width: 362px !important;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-md {
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
             width: 100% !important;
         }
-=======
-    }
-    &__swiper-slide{
-        width: 362px !important;
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 }
 
-.reviews-item{
-<<<<<<< HEAD
-    @include for-md{
+.reviews-item {
+    @include for-md {
         max-width: 345px;
         margin: 0 auto;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
     &__inner {
-=======
-    }
-}
-
-.reviews-item{
-    
-    &__inner{
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
-    &__inner{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-=======
-    
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-    &__inner{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-    &__inner{
->>>>>>> parent of 9cdaf12... Item, doc
         min-height: 249px;
         padding: 18px 18px 37px 22px;
         border-radius: 15px;
         border: 1px solid $dark_blue;
         background-color: #F9F9F9;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-md {
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
             padding: 18px 11px 37px 18px;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__head{
+
+    &__head {
         display: flex;
         margin-bottom: 13px;
         padding-bottom: 8px;
@@ -2371,12 +1592,14 @@
         align-items: center;
         border-bottom: 1px dotted $dark_blue;
     }
-    &__profile-info{
+
+    &__profile-info {
         display: flex;
         align-items: center;
-        
+
     }
-    &__avatar-block{
+
+    &__avatar-block {
         position: relative;
         margin-right: 10px;
         display: flex;
@@ -2386,125 +1609,68 @@
         height: 29px;
         border-radius: 50%;
         background-color: #C5C6C6;
+        flex-shrink: 0;
     }
-    &__icon{
+
+    &__icon {
         position: absolute;
         height: 17px;
         width: 17px;
         fill: $white;
     }
-    &__name{
+
+    &__name {
         font-size: 16px;
         line-height: 20px;
         color: $dark_blue;
         font-weight: 500;
     }
-    &__date{
-        display: flex;
-        align-items: center;
-        font-size: 14px;
-        line-height: 17px;
-        color: #999999;
-    }
-    &__date-icon{      
-        margin-right: 8px;  
-        width: 20px;
-        height: 20px;
-        fill: #999999; 
-    }
-    &__body{
+
+    
+
+    &__body {
         font-size: 16px;
         line-height: 22px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-md {
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-md{
->>>>>>> parent of 9cdaf12... Item, doc
             font-size: 15px;
             line-height: 21px;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 }
 
-.gallery{
-    &__slider{
+.gallery {
+    &__slider {
         margin-top: 60px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         @include for-sm {
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
             margin-top: 34px;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__swiper-slide{
+
+    &__swiper-slide {
         width: 362px !important;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         @include for-md {
-=======
-=======
->>>>>>> parent of 9cdaf12... Item, doc
-=======
->>>>>>> parent of 9cdaf12... Item, doc
-        @include for-md{
-            width: 45% !important;
-        }
-        @include for-sm{
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 9cdaf12... Item, doc
-=======
->>>>>>> parent of 9cdaf12... Item, doc
-=======
->>>>>>> parent of 9cdaf12... Item, doc
             width: 100% !important;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
-    }
-    &__swiper-slide{
-        width: 362px !important;
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 }
 
-.gallery-item{
+.gallery-item {
+    position: relative;
     display: block;
     width: 100%;
     height: 235px;
-    border-radius: 15px;
-    &__img{
+    border-radius: 20px;
+    max-width: 362px;
+    margin: 0 auto;
+    &:hover {
+        .gallery-item__info {
+            opacity: 1;
+            z-index: auto;
+        }
+    }
+
+    &__img {
         display: block;
         width: 100%;
         height: 100%;
@@ -2512,17 +1678,41 @@
         border-radius: 15px;
 
     }
+
+    &__info {
+        position: absolute;
+        display: flex;
+        padding-top: 40px;
+        padding-bottom: 32px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: $white;
+        background-color: rgba($color: $blue, $alpha: .6);
+        border-radius: 20px;
+        opacity: 0;
+        z-index: -1;
+        transition: $transition;
+    }
+
+    &__info-link {
+        color: $white;
+        border-color: $white;
+    }
 }
 
-.questions{
-    &__slider{
+.questions {
+    &__slider {
         margin-top: 60px;
         overflow: hidden !important;
     }
 }
 
-.questions-dropdown{
-    &__title-block{
+.questions-dropdown {
+    &__title-block {
         display: flex;
         align-items: center;
         font-size: 18px;
@@ -2533,38 +1723,27 @@
         border-bottom: 1px solid #D9DADA;
         transition: $transition;
         cursor: pointer;
-        &.active{
+
+        &.active {
             background-color: $grey;
-            .questions-dropdown__title-block{
+
+            .questions-dropdown__title-block {
                 border-top: 1px solid #D9DADA;
             }
+
+            .questions-dropdown__arrow-icon{
+                transform: rotate(180deg);
+            }
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-sm {
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
             padding: 0 15px;
             font-size: 16px;
             line-height: 22px;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__question-mark{
+
+    &__question-mark {
         display: flex;
         align-items: center;
         margin-right: 22px;
@@ -2573,26 +1752,25 @@
         width: 23px;
         height: 23px;
         border-radius: 50%;
-<<<<<<< HEAD
-<<<<<<< HEAD
         flex-shrink: 0;
-        @include for-sm{
+
+        @include for-sm {
             margin-right: 17px;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__icon{
+
+    &__icon {
         fill: $dark_blue;
         stroke: $dark_blue;
-        &--question-mark{
+
+        &--question-mark {
             width: 11px;
             height: 11px;
+            flex-shrink: 0;
         }
     }
-    &__arrow{
+
+    &__arrow {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -2601,112 +1779,52 @@
         border-radius: 50%;
         border: 2px solid $dark_blue;
         margin-left: auto;
+        flex-shrink: 0;
     }
-    &__arrow-icon{
+
+    &__arrow-icon {
         width: 12px;
         height: 12px;
         stroke: $dark_blue;
         transition: $transition;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        &.active{
-            transform: rotate(180deg);
-        }
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
-=======
->>>>>>> parent of 9cdaf12... Item, doc
-=======
->>>>>>> parent of 9cdaf12... Item, doc
-        
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-        &.active{
-            transform: rotate(180deg);
-        }
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 9cdaf12... Item, doc
-=======
->>>>>>> parent of 9cdaf12... Item, doc
-=======
->>>>>>> parent of 9cdaf12... Item, doc
     }
-    &__body{
+
+    &__body {
         display: none;
         padding: 23px 20px 23px 98px;
         background-color: #F9F9F9;
         font-size: 16px;
         line-height: 22px;
         border-bottom: 1px solid #D9DADA;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-sm {
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
             padding: 18px 16.5px 31px;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__btn-container{
+
+    &__btn-container {
         display: flex;
         align-items: center;
         justify-content: flex-end;
     }
-    &__btn{
+
+    &__btn {
         margin-left: auto;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-sm {
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
             margin: 18px auto 0;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
 }
 
-.specialists{
-<<<<<<< HEAD
-    &__slider{
+.specialists {
+    &__slider {
         margin-top: 62px;
-        @include for-sm{
+        
+        @include for-sm {
             margin-top: 45px;
         }
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
     &__swiper-slide{
         width: 363px !important;
@@ -2716,43 +1834,17 @@
     }
 
     &__container {
-=======
-    }
-}
-
-.specialists{
-    &__container{
-        margin-top: 62px;
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
-    &__container{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-    &__container{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-    &__container{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-    &__container{
-        margin-top: 62px;
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
         display: flex;
         align-items: center;
         justify-content: center;
     }
 }
 
-.specialist-item{
+.specialist-item {
     max-width: 557px;
     border-radius: 15px;
     border: 1px solid $dark_blue;
     overflow: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     &--vertiacal{
         max-width: 363px;
         .specialist-item__inner{
@@ -2779,229 +1871,1750 @@
     }
 
     @include for-tiny-tablet {
-=======
-    @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-    @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-    @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
         max-width: 312px;
     }
-    &__inner{
+
+    &__inner {
         display: flex;
-        @include for-tiny-tablet{
+
+        @include for-tiny-tablet {
             flex-direction: column;
         }
-=======
-    &__inner{
-        display: flex;
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
-    &__inner{
-        display: flex;
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__img-block{
+
+    &__img-block {
         width: 254px;
         height: 297px;
         flex-shrink: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-tiny-tablet {
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
             width: auto;
-            height: 300 px;
+            height: 300px;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__img{
+
+    &__img {
         display: block;
         width: 100%;
         height: 100%;
         object-fit: cover;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-tiny-tablet {
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
             object-position: top;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__text-block{
+
+    &__text-block {
         margin-left: -26px;
         padding: 21px 27px 30px 41px;
         border-radius: 15px 0 0 15px;
         background-color: #F9F9F9;
         font-size: 16px;
         line-height: 22px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-tiny-tablet {
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
             text-align: center;
             margin-top: -20px;
             margin-left: 0;
-            padding: 14.4px 18.5px 27.2px;    
+            padding: 14.4px 18.5px 27.2px;
             border-radius: 15px 15px 0 0;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__text-item{
+
+    &__text-item {
         margin-bottom: 10px;
         padding-bottom: 10px;
         border-bottom: 1px dotted $totalblack;
-        &:last-child{
+
+        &:last-child {
             border: none;
             padding: 0;
-            margin: 0;
+            margin-top: 41px;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-tiny-tablet {
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
             padding-bottom: 8px;
             margin-bottom: 8px;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__name{
+
+    &__name {
         font-size: 24px;
         line-height: 28px;
         color: $blue;
     }
-    &__experience{
+
+    &__experience {
         border: none;
     }
-    &__btn-container{
+
+    &__btn-container {
         display: flex;
         justify-content: flex-end;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         @include for-tiny-tablet {
-=======
-        @include for-tiny-tablet{
->>>>>>> parent of 9cdaf12... Item, doc
             justify-content: center;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
-        @include for-tiny-tablet{
-            justify-content: center;
-        }
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-tiny-tablet{
-            justify-content: center;
-        }
->>>>>>> parent of 9cdaf12... Item, doc
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
+    }
+    &__position{
+        padding: 0 30px 8px;
     }
 }
 
-.articles{
-    &__slider{
+.articles {
+    &__slider {
         margin-top: 62px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         @include for-sm {
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
-=======
-        @include for-sm{
->>>>>>> parent of 9cdaf12... Item, doc
             margin-top: 27px;
         }
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
-=======
->>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
-    &__link{
+
+    &__link {
         font-weight: 700;
         font-size: 22px;
         line-height: 28px;
         color: #868786;
         text-decoration: underline;
     }
-    &__swiper-slide{
-        @include for-tiny-tablet{
+
+    &__swiper-slide {
+        @include for-tiny-tablet {
             // width: 80% !important;
         }
+    }
+}
+
+.item-menu {
+    margin-top: 50px;
+    margin-bottom: 64px;
+    background-color: #F8F8F8;
+
+    @include for-md {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    &__inner {
+        padding: 30px 0 13px;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include for-md {
+            // width: 1024px;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+
+        @include for-sm {
+            padding: 24px 14.5px;
+            min-height: 0;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 5px 15px;
+        color: $blue;
+        transition: $transition;
+        margin-right: 31px;
+        border: 1px solid $blue;
+        border-radius: 25px;
+        margin-bottom: 17px;
+        flex-shrink: 0;
+
+        @include for-lg {
+            margin-right: 20px;
+        }
+
+        @include for-md {
+            margin-bottom: 0;
+        }
+
+    }
+
+    &__img-block {
+        margin-right: 9px;
+        border-radius: 50%;
+        border: 2px solid $blue;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: $transition;
+    }
+
+    &__icon {
+        max-width: 25px;
+        fill: $blue;
+        transition: $transition;
+    }
+}
+
+.rate-block {
+    margin-bottom: 21px;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 21px 0;
+        border-top: 1px solid #D9DADA;
+        border-bottom: 1px solid #D9DADA;
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 22px;
+        color: $dark_blue;
+    }
+
+    &__icon {
+        margin-right: 8px;
+        width: 20px;
+        height: 20px;
+        fill: $dark_blue;
+    }
+
+    .jq-ry-container {
+        padding: 0 8px;
+    }
+
+    &__total {
+        margin-top: 3px;
+        color: $grey2;
+    }
+}
+
+.action {
+    padding: 18px 0;
+    border-top: 1px dotted $dark_blue;
+
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+
+        @include for-lg {
+            align-items: center;
+        }
+
+        @include for-md {
+            flex-direction: column;
+        }
+    }
+
+    &__img-block {
+        max-width: 560px;
+        height: auto;
+        flex-shrink: 0;
+
+        @include for-lg {
+            max-width: 450px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    &__text-block {
+        margin-left: 30px;
+        width: 50%;
+
+        @include for-md {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 82.5px;
+        border-bottom: 1px dotted $dark_blue;
+
+        @include for-lg {
+            padding-bottom: 20px;
+        }
+
+        @include for-md {
+            flex-direction: column-reverse;
+            align-items: center;
+            padding-bottom: 106.5px;
+        }
+    }
+
+    &__title {
+        margin-top: 3px;
+        font-size: 28px;
+        line-height: 34px;
+        color: $dark_blue;
+
+        @include for-md {
+            text-align: center;
+            font-size: 26px;
+            line-height: 30px;
+        }
+    }
+
+    &__sale {
+        padding: 10px 31px;
+        font-size: 42px;
+        line-height: 50px;
+        color: $white;
+        background-color: $pink;
+        border-radius: 15px;
+
+        @include for-md {
+            padding: 0 31px;
+            font-size: 35px;
+            line-height: 42px;
+        }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 29px;
+
+        @include for-md {
+            margin-top: 15px;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__finish-time {
+        font-size: 22px;
+        line-height: 26px;
+        color: $blue;
+
+        @include for-md {
+            margin-bottom: 19px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &+& {
+            margin-left: 17px;
+        }
+    }
+
+    &__item-total {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 53px;
+        height: 53px;
+        font-size: 32px;
+        line-height: 38px;
+        color: $dark_blue;
+        border-radius: 50%;
+        border: 1px solid $blue;
+    }
+
+    &__item-title {
+        font-size: 12px;
+        line-height: 14px;
+        color: $dark_blue;
+    }
+
+    &__btn {
+        margin-top: 20px;
+        align-self: flex-end;
+
+        @include for-md {
+            align-self: center;
+        }
+    }
+}
+
+.doc-page {
+    &__head {
+        background-color: #F9F9F9;
+    }
+
+    &__head-inner {
+        display: flex;
+        align-items: flex-start;
+        max-width: 982px;
+        margin: 0 auto;
+        padding-top: 44px;
+        padding-bottom: 68px;
+        @include for-md{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__img-block {
+        max-width: 493px;
+        flex-shrink: 0;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @include for-md{
+            border-radius: 20px;
+        }
+    }
+
+    &__text-block {
+        margin-left: 30px;
+        max-width: 458.5px;
+        @include for-md{
+            margin-top: 21.4px;
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+
+    &__name {
+        margin-bottom: 11.5px;
+        font-size: 32px;
+        line-height: 38px;
+        color: $dark_blue;
+        @include for-md{
+            text-align: center;
+        }
+    }
+
+    &__position {
+        margin-bottom: 34.7px;
+    }
+
+    &__head-container {
+        padding: 11px 0 0;
+        border-top: 1px dotted $dark_blue;
+    }
+
+    &__head-item {
+        &--specialization {
+            display: flex;
+            flex-direction: column;
+            min-height: 121px;
+        }
+
+        &--experience {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__specialization {
+        margin-left: 26px;
+        text-decoration: underline;
+        color: $blue;
+        @include for-md{
+            text-align: left;
+        }
+    }
+
+    &__head-item-title {
+        display: flex;
+        align-items: center;
+        line-height: 19px;
+        color: $dark_blue;
+    }
+
+    &__head-icon {
+        fill: $dark_blue;
+
+        &--specialization {
+            margin-right: 7px;
+            width: 19.47px;
+            height: 19.47px;
+        }
+
+        &--experience {
+            margin-right: 8.5px;
+            width: 16.45px;
+            height: 23.3px;
+        }
+    }
+
+    &__rate-inner {
+        margin-top: 15.8px;
+        padding: 12px 0;
+        justify-content: flex-start;
+        border-top: 1px dotted $dark_blue;
+        border-bottom: 1px dotted $dark_blue;
+    }
+
+    &__body {
+        padding-top: 30.7px;
+    }
+    &__callback{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 52.6px;
+        @include for-md{
+            flex-direction: column;
+            
+        }
+    }
+    &__callback-item{
+        padding: 11px 25px;
+        border: 1px solid transparent;
+        border-radius: 25px;
+        max-width: 226px;
+        width: 100%;
+        text-align: center;
+        transition: $transition;
+        &+&{
+            margin-left: 38px;
+            @include for-md{
+                margin-left: 0;
+                margin-top: 38px;
+            }
+        }
+        &:hover{
+            color: $white;
+        }
+        &--appointment{
+            border-color: $pink;
+            color: $pink;
+            &:hover{
+                background-color: $pink;
+            }
+        }
+        &--question{
+            border-color: $blue;
+            color: $blue;
+            &:hover{
+                background-color: $blue;
+            }
+        }
+        &--review{
+            border-color: #98416E;
+            color: #98416E;
+            &:hover{
+                background-color: #98416E;
+            }
+        }
+    }
+    &__desc-title{
+        margin-bottom: 52px;
+    }
+}
+
+.video-section{
+    &__inner{
+        display: flex;
+        margin-top: 51.6px;
+        @include for-md{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__content-block{
+        position: relative;
+        width: 557px;
+        height: 312px;
+        flex-shrink: 0;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 420px;
+            height: 411px;  
+            background-image: url(../img/video-block/before.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -1;
+            right: -128px;
+            top: -45px;
+            @include for-md{
+                display: none;
+            }
+        }
+        @include for-lg{
+            width: 474px;
+            height: 267px;
+        }
+        @include for-md{
+            margin-bottom: 17px;
+            width: 450px;
+            height: 250px;
+        }
+        @include for-md-mob{
+            width: 100%;
+            height: 192px;
+        }
+    }
+    &__iframe{
+        width: 100%;
+        height: 100%;
+    }
+    &__text-block{
+        margin-left: 30.5px;
+        @include for-md{
+            margin-left: 0;
+        }
+    }
+    &__subtitle{
+        font-size: 32px;
+        line-height: 38px;
+        color: $dark_green;
+        @include for-md{
+            text-align: center;
+        }
+        @include for-sm{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 26px;
+        }
+    }
+    &__title{
+        margin-bottom: 15px;
+        font-size: 32px;
+        line-height: 38px;
+        color: $dark_blue;
+        @include for-md{
+            text-align: center;
+        }
+        @include for-sm{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 26px;
+        }
+    }
+    p+p{
+        margin-top: 1em;
+    }
+}
+
+.price-page{
+    &__item{        
+        &:first-child{
+            .price-page__item-title{
+                border-top: 1px solid $blue;
+            }
+        }
+        &--purple{
+            color: $purple_border;
+            @include for-md-mob{
+                color: $black;
+            }
+            .price-page__icon-price-container{
+                border-color: $purple_border;
+            }
+            .price-page__item-body{
+                background-color: $light_grey;
+            }
+        } 
+        &--dark-blue{
+            color: $dark_blue;
+            @include for-md-mob{
+                color: $black;
+            }
+            .price-page__icon-price-container{
+                border-color: $dark_blue;
+            }
+            .price-page__item-body{
+                background-color: $light_grey;
+            }
+        }    
+    }
+    &__item-title{
+        padding: 12px 22px 12px 16px;
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        line-height: 28px;
+        border-bottom: 1px solid $blue;
+        cursor: pointer;
+        transition: $transition;
+        &.active{
+            background-color: $light_grey;
+            border-bottom-color: transparent;
+            .price-page__arrow-icon{
+                transform: rotate(180deg);
+            }
+        }
+        @include for-md-mob{
+            padding-left: 10px;
+            padding-bottom: 17px;
+            font-size: 18px;
+            line-height: 21.6px;
+        }
+    }
+    &__icon-price{
+        width: 21.67px;
+        height: 21.67px;
+    }
+    &__icon-price-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 17.3px;
+        width: 34.32px;
+        height: 34.32px;
+        border-radius: 50%;
+        border: 1px solid $blue;
+        @include for-md-mob{
+            display: none;
+        }
+    }
+    &__icon-price{
+        fill: $blue;
+    }
+    &__arrow{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 29px;
+        height: 29px;
+        border-radius: 50%;
+        border: 2px solid #024B76;
+        margin-left: auto;
+        flex-shrink: 0;
+    }
+    &__arrow-icon{
+        width: 12px;
+        height: 12px;
+        stroke: #024B76;
+        transition: $transition;
+    }
+    &__item-body{
+        position: relative;
+        display: none;
+        margin-bottom: 29px;
+        color: #181716;
+    }
+    .price__footnote{
+        margin-top: 4px;
+    }
+    &__icon-star{
+        stroke: $purple_border;
+        width: 19.24px;
+        height: 19.24px;
+        @include for-md-mob{
+            display: none;
+        }
+    }
+    &__icon-percent{
+        width: 17px;
+        height: 14px;
+        fill: $blue;
+        @include for-md-mob{
+            display: none;
+        }
+    }
+    &__icon-purse{
+        width: 17px;
+        height: 18.4px;
+        stroke: $purple_border;
+        @include for-md-mob{
+            display: none;
+        }
+    }
+    &__icon-installment{
+        width: 20.7px;
+        height: 19.22px;
+        fill: $dark_blue;
+        @include for-md-mob{
+            display: none;
+        }
+    }
+    &__text-content{
+        padding-left: 68px;
+        padding-bottom: 30px;
+        max-width: 720px;
+        ul{
+            li{
+                position: relative;
+                padding-left: 15px;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    background-color: #181716;
+                    left: 0;
+                    top: 8px;
+                }
+            }
+        }
+        @include for-md-mob{
+            padding-left: 10px;
+        }
+    }
+    &__btn{
+        position: absolute;
+        right: 20px;
+        bottom: 27.6px;
+        @include for-md-mob{
+            position: relative;
+            right: auto;
+            bottom: auto;
+            margin-bottom: 41px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.question-link{
+    margin-top: 31px;
+    margin-bottom: 90px;
+    background: linear-gradient(270deg, #007fc2 0%, #e57fbc 100%);
+    border-radius: 20px;
+    padding: 20px 23.5px 20px 19px;
+    &__inner{
+        display: flex;
+        align-items: center;
+        @include for-sm{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__question-mark-container{
+        display: flex;
+        margin-right: 17px;
+        align-items: center;
+        justify-content: center;
+        width: 34.32px;
+        height: 34.32px;
+        border-radius: 50%;
+        border: 1px solid $white;
+        flex-shrink: 0;
+        @include for-sm{
+            display: none;
+        }
+    }
+    &__icon-question-mark{
+        width: 10.32px;
+        height: 17.14px;
+        fill: $white;
+    }
+    &__title{
+        margin-right: 16px;
+        font-size: 24px;
+        line-height: 28px;
+        color: $white;
+        @include for-sm{
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+        @include for-md-mob{
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+    &__desc{
+        max-width: 600px;
+        color: $white;
+        @include for-sm{
+            margin-bottom: 28.8px;
+        }
+        
+    }
+    &__btn-container{
+        @include for-sm{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__btn{
+        color: $white;
+        border-color: $white;
+    }
+}
+.reviews-page{
+    &__title{
+        position: relative;
+    }    
+}
+
+.reviews-menu {
+    margin-top: 50px;
+    margin-bottom: 64px;
+    background-color: #F8F8F8;
+
+    @include for-md {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    &__inner {
+        padding: 30px 0 13px;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include for-md {
+            // width: 1024px;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+
+        @include for-sm {
+            padding: 24px 14.5px;
+            min-height: 0;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 5px 15px;
+        color: $blue;
+        transition: $transition;
+        margin-right: 31px;
+        border: 1px solid $blue;
+        border-radius: 25px;
+        margin-bottom: 17px;
+        flex-shrink: 0;
+
+        @include for-lg {
+            margin-right: 20px;
+        }
+
+        @include for-md {
+            margin-bottom: 0;
+        }
+
+    }
+
+    &__img-block {
+        margin-right: 9px;
+        border-radius: 50%;
+        border: 2px solid $blue;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: $transition;
+    }
+
+    &__icon {
+        max-width: 25px;
+        fill: $blue;
+        transition: $transition;
+    }
+}
+.review{
+    padding: 29px 0 0;
+    margin: 0 auto 20px;
+    max-width: 754px;
+    border-top: 1px dotted $blue;
+    &__info{
+        position: relative;
+        margin-top: 25px;
+        padding-bottom: 25px;
+        border-bottom: 1px dotted $blue;
+    }
+    &__item{
+        display: flex;
+        margin-bottom: 8px;
+        align-items: center;
+        color: $grey2;        
+    }
+    &__icon{
+        margin-right: 6.7px;
+        &--user{
+            width: 14px;
+            height: 14px;
+            fill: $dark_blue;
+        }
+        &--calendar{
+            width: 17.62px;
+            height: 16.5px;
+            fill: $dark_blue
+        }
+        &--flag{
+            width: 16.62px;
+            height: 17px;
+            stroke: $dark_blue;
+            fill: $dark_blue;
+        }
+        &--photo{
+            margin-right: 0;
+            width: 23px;
+            height: 18px;
+            fill: $blue;
+        }
+    }
+    &__source{
+        margin-bottom: 0;
+    }
+    &__flag{
+        width: 16;
+    }
+    &__source-link{
+        margin-left: 4px;
+        color: #66B2DA;
+        text-decoration: underline;
+    }
+    &__photo{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid $blue;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        @include for-md{
+            top: calc(50% - 25px);
+        }
+    }
+    p+p{
+        margin-top: 1em;  
+    }
+}
+.review-answer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 22.6px 0 29.6px;
+    border-bottom: 1px dotted $blue;
+    @include for-md{
+        padding-top: 40px;
+    }
+    &__avatar-block{
+        margin-right: 30px;
+        width: 68px;
+        height: 68px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        @include for-md{
+            position: absolute;
+            margin-right: 0;
+            left: 0;
+            top: 18px;
+        }
+    }
+    &__avatar{
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    &__title{
+        margin-bottom: 8px;
+        @include for-md{
+            padding-left: 77.5px;
+            margin-bottom: 46px;
+        }
+    }
+}
+
+.video-slider{
+    &__slider{
+        margin-top: 64px;
+    }
+    &__item{
+        max-width: 361px;
+        height: 202px;
+        margin:  0 auto;
+    }
+    &__iframe{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.pagination{
+    margin: 0 auto 53px;
+    max-width: 754px;
+    padding-bottom: 13px;
+    border-bottom: 1px dotted $blue;
+    border-bottom: 1px dotted $blue;
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__list-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 29.4px;
+        height: 29.4px;
+        border-radius: 50%;
+        border: 1px solid $blue;
+        color: $blue;
+        transition: $transition;
+        &--no-border{
+            border-color: transparent;
+            &:hover{
+                background-color: transparent !important;
+                color: $dark_blue !important;
+                border-color: transparent !important;
+            }
+        }
+        &.active{
+            background-color: $blue;
+            color: $white;
+        }
+        &:hover{
+            background-color: $dark_blue;
+            color: $white;
+            border-color: $dark_blue;
+        }
+    }
+    &__list-item{
+        &--dn-mobile{
+            @include for-md-mob{
+                display: none;
+            }
+        }
+        &+&{
+            margin-left: 5px;
+            @include for-md-mob{
+                margin-left: 3px;
+            }
+        }
+    }
+    &__icon{
+        width: 10px;
+        height: 10px;
+        stroke: $blue;
+        transform-origin: 50% 50%;
+        &--left{
+            transform: rotate(90deg);
+        }
+        &--right{
+            transform: rotate(-90deg);
+        }
+    }
+}
+
+.review-post{
+    margin-bottom: 90px;
+    
+    &__form-inner{
+        display: flex;
+        margin-top: 44.4px;
+        @include for-md{
+            flex-direction: column;
+        }
+    }
+    &__form{
+        width: auto;
+    }
+    &__left-side{
+        width: 50%;       
+        
+        &* + *{
+            margin-top: 40px;
+        }
+        @include for-md{
+            width: 100%;
+        }
+    }
+    &__right-side{
+        width: 50%;
+        margin-left: 30px;
+        @include for-md{
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+    &__select{
+        height: 48px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border-radius: 24px;
+        border: 1px solid $blue;
+        box-sizing: border-box;
+        padding: 0 24px;
+        transition: $transition;
+        font-size: 20px;
+        line-height: 23px;
+        background-color: $white;
+        color: $dark_blue;
+        border-color: $blue;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        color: $blue;
+        &:hover{
+            border-color: $blue;
+        } 
+        &:active{
+            border-color: $blue; 
+        }
+        &:after{
+            width: 10px;
+            height: 10px;
+            border-color: $blue;
+            right: 19px;
+        } 
+        .list{
+            width: 100%;
+            border-radius: 20px;
+        }
+        
+    }
+    &__textarea{
+        height: 100%;
+        color: $blue;
+        @include for-md{
+            margin-top: 40px;
+            min-height: 255px;
+        }
+    }
+    &__bottom{
+        display: flex;
+        margin-top: 43px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__submit{
+        border: none;
+        padding: 10px 20px;
+        margin-bottom: 29.5px;
+        border-radius: 20px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    &__policy{
+        font-size: 12px;
+        line-height: 14px;
+        color: $politics_color;
+        text-align: center;
+    }
+    .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus{
+        background-color: #D4EDFC;
+        color: $dark_blue;
+    }
+    .nice-select .option{
+        color: $blue;
+        font-weight: 400;
+    }
+    .error{
+        border-color: $pink;
+    }
+    label.error{
+        display: none !important;
+    }
+}
+
+.questions-menu {
+    margin-top: 50px;
+    margin-bottom: 64px;
+    background-color: #F8F8F8;
+
+    @include for-md {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    &__inner {
+        padding: 30px 0 13px;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include for-md {
+            // width: 1024px;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+
+        @include for-sm {
+            padding: 24px 14.5px;
+            min-height: 0;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 5px 15px;
+        color: $blue;
+        transition: $transition;
+        margin-right: 31px;
+        border: 1px solid $blue;
+        border-radius: 25px;
+        margin-bottom: 17px;
+        flex-shrink: 0;
+        &.active{
+            background-color: $blue;
+            color: $white;
+        }
+
+        @include for-lg {
+            margin-right: 20px;
+        }
+
+        @include for-md {
+            margin-bottom: 0;
+        }
+
+    }
+
+    &__img-block {
+        margin-right: 9px;
+        border-radius: 50%;
+        border: 2px solid $blue;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: $transition;
+    }
+
+    &__icon {
+        max-width: 25px;
+        fill: $blue;
+        transition: $transition;
+    }
+}
+
+.questions-page{
+    &__dropdown-container{
+        margin-top: 40px;
+    }
+    &__pagination{
+        margin-top: 16.7px;
+        max-width: 100%;
+        border-top: none;
+        border-bottom: 1px solid #D9DADA;
+    }
+}
+
+.items-list{
+    &__pagination{
+        padding-top: 13px;
+    }
+}
+
+.items-menu {
+    margin-top: 50px;
+    margin-bottom: 64px;
+    background-color: #F8F8F8;
+
+    @include for-md {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    &__inner {
+        padding: 30px 0 13px;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include for-md {
+            // width: 1024px;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+
+        @include for-sm {
+            padding: 24px 14.5px;
+            min-height: 0;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 5px 15px;
+        color: $blue;
+        transition: $transition;
+        margin-right: 31px;
+        border: 1px solid $blue;
+        border-radius: 25px;
+        margin-bottom: 17px;
+        flex-shrink: 0;
+        &.active{
+            background-color: $blue;
+            color: $white;
+        }
+
+        @include for-lg {
+            margin-right: 20px;
+        }
+
+        @include for-md {
+            margin-bottom: 0;
+        }
+
+    }
+
+    &__img-block {
+        margin-right: 9px;
+        border-radius: 50%;
+        border: 2px solid $blue;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: $transition;
+    }
+
+    &__icon {
+        max-width: 25px;
+        fill: $blue;
+        transition: $transition;
+    }
+}
+
+.directory-item{
+    display: flex;
+    align-items: flex-start;
+    max-width: 756px;
+    margin: 0 auto;
+    padding-bottom: 29px;
+    border-bottom: 1px dotted $blue;
+    @include for-tiny-tablet{
+        flex-direction: column;
+    }
+    &+&{
+        margin-top: 27.3px;
+    }
+    &__img-block{
+        width: 166px;
+        height: 163px;
+        flex-shrink: 0;
+        @include for-tiny-tablet{
+            height: 280px;
+            margin-bottom: 16px;
+            width: 100%;
+        }
+        @include for-md-mob{
+            height: 154px;
+        }
+    }
+    &__img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        object-fit: cover;   
+    }
+    &__text-block{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 30px;
+        border-radius: 12px;
+        @include for-tiny-tablet{
+            margin-left: 0;
+        }
+    }
+    &__title{
+        margin-bottom: 5px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    &__link{
+        padding: 11px 40px;
+        margin-top: 27px;
+        align-self: flex-end;
+        border-radius: 25px;
+    }
+}
+
+.news-menu {
+    margin-top: 50px;
+    margin-bottom: 64px;
+    background-color: #F8F8F8;
+
+    @include for-md {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    &__inner {
+        padding: 30px 0 13px;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include for-md {
+            // width: 1024px;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+
+        @include for-sm {
+            padding: 24px 14.5px;
+            min-height: 0;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 5px 15px;
+        color: $blue;
+        transition: $transition;
+        margin-right: 20px;
+        border: 1px solid $blue;
+        border-radius: 25px;
+        margin-bottom: 17px;
+        flex-shrink: 0;
+        &.active{
+            background-color: $blue;
+            color: $white;
+        }
+
+        @include for-lg {
+            margin-right: 20px;
+        }
+
+        @include for-md {
+            margin-bottom: 0;
+        }
+
+    }
+
+    &__img-block {
+        margin-right: 9px;
+        border-radius: 50%;
+        border: 2px solid $blue;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: $transition;
+    }
+
+    &__icon {
+        max-width: 25px;
+        fill: $blue;
+        transition: $transition;
+    }
+    
+}
+
+.news-list{
+    &__pagination{
+        padding-top: 12px;
+    }
+}
+
+.news-item{
+    margin: 0 auto;
+    padding-top: 22px;
+    padding-bottom: 23.8px;
+    max-width: 754px;
+    border-bottom: 1px dotted $blue;
+    &:first-child{
+        border-top: 1px dotted $blue;
+    }
+    &__title{
+        margin-bottom: 10px;
+        font-size: 22px;
+        line-height: 26px;
+        color: #181716;
+    }
+    p+p{
+        margin-top: 1em;
+    }
+    &__info-block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 29px;
+    }
+    &__date{
+        padding-left: 0;
+    }
+    
+}
+
+.glossary-menu {
+    margin-top: 50px;
+    margin-bottom: 64px;
+    background-color: #F8F8F8;
+
+    @include for-md {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    &__inner {
+        padding: 30px 0 13px;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include for-md {
+            // width: 1024px;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+
+        @include for-sm {
+            padding: 24px 14.5px;
+            min-height: 0;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 36.35px;
+        height: 36.35px;
+        color: $blue;
+        transition: $transition;
+        margin-right: 10px;
+        border: 1px solid $blue;
+        border-radius: 50%;
+        margin-bottom: 17px;
+        flex-shrink: 0;
+        &.active{
+            background-color: $blue;
+            color: $white;
+        }
+
+        @include for-lg {
+            margin-right: 20px;
+        }
+
+        @include for-md {
+            margin-bottom: 0;
+        }
+        @include for-md-mob{
+            margin-right: 10px;
+        }
+
+    }
+
+    &__img-block {
+        margin-right: 9px;
+        border-radius: 50%;
+        border: 2px solid $blue;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: $transition;
+    }
+
+    &__icon {
+        max-width: 25px;
+        fill: $blue;
+        transition: $transition;
+    }
+    
+}
+.glossary{
+    &__title{
+        padding: 10px 30px;
+        max-width: 854px;
+        margin: 0 auto;
+        font-size: 32px;
+        line-height: 38px;
+        color: $dark_blue;
+        border-bottom: 1px solid $blue;
+        @include for-md-mob{
+            padding-left: 10px;
+        }
+    }
+}
+.glossary-item{
+    max-width: 854px;
+    margin: 0 auto;
+    &__title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14.5px 30px ;
+        font-size: 22px;
+        line-height: 26px;
+        cursor: pointer;
+        border-bottom: 1px solid $blue;
+        transition: $transition;
+        &.active{
+            background-color: #E5F2F9;
+            border-bottom-color: transparent;
+            .glossary-item__arrow-icon{
+                transform: rotate(180deg);
+            }
+        }
+        @include for-md-mob{
+            padding-left: 10px;
+        }
+    }
+    &__arrow{
+        width: 29px;
+        height: 29px;
+    }
+    &__body{
+        display: none;
+        padding: 17.6px 30px 22.4px;
+        background-color: $light_grey;    
+        @include for-md-mob{
+            padding-left: 10px;
+        }
+    }
+    p+p{
+        margin-top: 1em;
+    }
+    &__link-container{
+        display: flex;
+        margin-top: 27.5px;
+        justify-content: flex-end;
+    }
+    &__link{
+        margin-left: auto;
+        color: $blue;
+        text-decoration: underline;
     }
 }
