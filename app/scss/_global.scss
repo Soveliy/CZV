@@ -1,4 +1,6 @@
 @import "_vars";
+
+
 *, *::before, *::after{
     margin: 0;
     padding: 0;
@@ -37,7 +39,16 @@ header{
     /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
     flex: 0 0 auto;
  }
-
+.baguetteBox-button{
+    svg{
+        g{
+            stroke: $blue !important;
+        }
+    }
+    polyline{
+        stroke: $blue !important;
+    }
+}
  .wrapper{
     position: relative;
     display: flex;
@@ -62,7 +73,7 @@ a{
     padding: 0 15px;
     margin: 0 auto;
     // max-width: 1230px;
-    max-width: 1230px;
+    max-width: 1178px;
     box-sizing: border-box;
     font-size: 16px;
     line-height: 21px;
@@ -139,6 +150,11 @@ a{
             border-color: $purple;
         }
     }
+    &--purple{
+        background-color: $purple_border;
+        color: $white;
+        border-color: $purple_border;
+    }
 
 }
 
@@ -149,14 +165,39 @@ a{
     line-height: 40px;
     color: $dark_blue;
     text-align: center;
+    &__btn{
+        position: absolute;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+        margin-left: 100px;
+        @include for-lg{
+            margin-left: 40px;
+        }
+        @include for-md{
+            position: relative;
+            margin-top: 20px;
+            margin-left: 0;
+        }
+    }
+    @include for-md{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     @include for-md-mob{
-        font-size:  38px;
+        font-size: 34px;
         line-height: 42px;
         font-weight: 400;
     }
 }
 
 .breadcrumbs{  
+    &--bg-grey{
+        background-color: #f9f9f9;
+        padding-top: 10px;
+        margin-top: 0;
+    }
     @include for-md{
         display: none;
     }
@@ -191,6 +232,18 @@ a{
 .content-block{
     max-width: 754px;
     margin: 0 auto;
+    &--border-right{
+        margin: 32px 0;
+        padding: 30px 0;
+        background-color: #F9F9F9;
+    }
+    h4{
+        margin-top: 2em;
+        margin-bottom: 1em;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 22px;
+    }
     p{
         font-size: 16px;
         line-height: 22px;
@@ -208,7 +261,7 @@ a{
 .section-page{
     margin-bottom: 80px;
     @include for-md-mob{
-        margin-bottom: 75px;
+        margin-bottom: 60px;
     }
 }
 
@@ -276,24 +329,59 @@ a{
     
 }
 
- /* global */
- .g-hidden { display: none; }
- .g-line { zoom: 1; }
- .g-line:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
- 
- /* modal */
- .b-modal { position: relative; margin:0 auto; width:100%; max-width:1000px;}
- 
- 
- /* modal */
- .arcticmodal-overlay,
- .arcticmodal-container { position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 11000; }
- .arcticmodal-container { overflow: auto; margin: 0; padding: 0; border: 0; border-collapse: collapse; }
- *:first-child+html .arcticmodal-container { height: 100% }
- .arcticmodal-container_i { height: 100%; margin: 0 auto; width:100%; }
- .arcticmodal-container_i2 { padding: 24px; margin: 0; border: 0; vertical-align: middle;
-     @include for-tiny-tablet(){
-         padding: 10px;
-     }
-  }
- .arcticmodal-error { padding: 20px;  border-radius: 10px; background: #000; color: #fff; }
+.photo-block{
+    margin: 32px 0;
+    padding: 30px 0;
+    background-color: #F9F9F9;
+    &__img-block{
+        max-width: 558px;
+        margin: 0 auto;
+    }
+    &__img{
+        display: block;
+        width:  100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+}
+
+.insert-text{
+    margin: 32px 0;
+    padding: 30px 0;
+    background-color: #F9F9F9;
+    p{
+        position: relative;
+        padding-left: 26px;
+        margin: 0 auto;
+        max-width: 650px;
+        border-left: 4px solid $blue;
+        font-size: 26px;
+        line-height: 32px;
+        font-weight: 300;
+        color: $dark_blue;
+        @include for-sm{
+            margin-left: 24px;
+            margin-right: 11px;
+        }
+    }
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #999999;
+    @include for-md-mob{
+        // padding-left: 13px;
+    }
+    &__icon {
+        margin-right: 8px;
+        width: 20px;
+        height: 20px;
+        fill: #999999;
+    }
+}
+
+

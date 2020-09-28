@@ -70,6 +70,7 @@
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.341 7.212" id="dropdown-arrow">
     <path d="M1.541 1.542L5.67 5.671m4.129-4.129l-1.72 1.72L6.96 4.381l-1.29 1.29" fill="none"  stroke-linecap="round" stroke-width="2.18"></path>
   </symbol>
+
    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.833 12.84" id="loope">
     <g fill="none">
       <path d="M8.03 8.027A4 4 0 1 0 5.2 9.2a4 4 0 0 0 2.83-1.173z" stroke-width="2.4"></path>
