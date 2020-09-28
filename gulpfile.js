@@ -52,9 +52,12 @@ gulp.task('script', function(){
 gulp.task('js', function(){
   return gulp.src([
     'node_modules/swiper/swiper-bundle.js',
+<<<<<<< HEAD
     'assest/js/mask.js',
     'assest/js/jquery.validate.min.js',
     'assest/js/jquery.arcticmodal.js',
+=======
+>>>>>>> parent of 9cdaf12... Item, doc
     // 'node_modules/rateyo/lib/iife/rateyo.js',
     // 'node_modules/ion-rangeslider/js/ion.rangeSlider.min.js',
   ])

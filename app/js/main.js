@@ -29,6 +29,7 @@ var aboutSlider = new Swiper('.main-slider .swiper-container', {
       },
   });
 
+<<<<<<< HEAD
 // const sliders = document.querySelectorAll('.swiper-container');
 
 // sliders.forEach((el) => {
@@ -46,6 +47,8 @@ var aboutSlider = new Swiper('.main-slider .swiper-container', {
 // 		},
 // 	});
 // });
+=======
+>>>>>>> parent of 9cdaf12... Item, doc
 $('.content-slider').each(function(){
   if($(this).hasClass('price__slider') || $(this).hasClass('questions__slider')){
     var contentSlider = new Swiper(this, {    
@@ -164,6 +167,7 @@ $('.questions-dropdown__title-block').click(function(){
   $(this).find('.questions-dropdown__arrow-icon').toggleClass('active');
 });
 
+<<<<<<< HEAD
 $('.options-buttons__search-btn').click(function(){
     $(this).next().toggleClass('js-active');
   });
@@ -216,3 +220,6 @@ $(".mobile-menu__nav > ul > li > span").on('click', function(){
   $(".reception-js").click(function(){
     $("#reception-modal").arcticmodal();
   });
+=======
+
+>>>>>>> parent of 9cdaf12... Item, doc
