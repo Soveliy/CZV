@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="preheader">
+            <div class="container">
+                <div class="preheader__row">
+                    <div class="preheader__time-work time-work">
+                        <div class="time-work__title">Ежедневно</div>
+                        <a href="#" class="time-work__link">График работы</a>
+                    </div>
+                    <div class="social preheader__social">
+                        <ul class="social__list">
+                            <li class="social__list-item"><a href="#" class="social__link">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#facebook"></use>
+                                </svg>
+                            </a></li>
+                            <li class="social__list-item"><a href="#" class="social__link">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#inst"></use>
+                                </svg>
+                            </a></li>
+                            <li class="social__list-item"><a href="#" class="social__link">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#youtube"></use>
+                                </svg>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="options-buttons preheader__options-buttons">
+                        <ul class="options-buttons__list">
+                            <li class="options-buttons__list-item">
+                               <form class="search" name="search__form">
+                                    <div class="options-buttons__icon options-buttons__search-btn">
+                                        <svg class="icon">
+                                            <use xlink:href="img/sprite.svg#loope"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="search__input-container form__input-container">
+                                        <input type="text" class="search__input form__input">
+                                        <button class="options-buttons__icon search__button">
+                                            <svg class="icon">
+                                                <use xlink:href="img/sprite.svg#loope"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="options-buttons__list-item">
+                                <a href="#" class="options-buttons__icon options-buttons__lang">
+                                   EN
+                                </a>
+                            </li>
+                            <li class="options-buttons__list-item">
+                                <a href="#" class="for-the-blind options-buttons__link">
+                                   <span class="options-buttons__icon">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#eyes"></use>
+                                      </svg>
+                                   </span>
+                                   <span class="for-the-blind__text">
+                                    Версия для слабовидящих
+                                   </span>
+                                 </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="messangeres preheader__messangeres"> 
+                        <ul class=" messangeres__list">
+                            <li class="messangeres__item">
+                                <a href="" class="messangeres__icon messangeres__icon--whatsup">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#whatsup"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="messangeres__item">
+                                <a href="" class="messangeres__icon messangeres__icon--viber">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#viber"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="messangeres__item">
+                                <a href="tel:84995179900" class="messangeres__phone messangeres__phone--lit">8 (499) 517-99-00</a> <br>
+                                <div class="messangeres__callback callback-js">Заказать обратный звонок</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                  <div class="burger">
+                      <div class="burger__line"></div>
+                      <div class="burger__line"></div>
+                      <div class="burger__line"></div>
+                  </div>
+                  <div class="logo header__logo">
+                    <a href="/" class="logo__image"></a>
+                  </div>
+                  <nav class="main-menu">
+                      <ul>
+                          <li>
+                              <a href="#">Услуги</a>
+                             <div class="submenu-container">
+                                <ul>
+                                    <li><a href="#">Преимущества</a></li>
+                                    <li><a href="#">Специалисты центра</a></li>
+                                    <li><a href="#">Оборудование</a></li>
+                                    <li><a href="#">Наша история</a></li>
+                                    <li><a href="#">Фотогалерея</a></li>
+                                    <li><a href="#">Интервью с главным врачом</a></li>
+                                    <li><a href="#">Знаменитые пациенты</a></li>
+                                    <li><a href="#">Новости</a></li>
+                                    <li><a href="#">Собственный стационар</a></li>
+                                    <li><a href="#">Научные работы и изобретения</a></li>
+                                    <li><a href="#">Лицензии</a></li>
+                                </ul>
+                             </div>
+                            </li>
+                          <li>
+                              <a href="#">Цены</a></li>
+                          <li>
+                              <a href="#">Отзывы</a></li>
+                          <li>
+                              <a href="#">Акции</a></li>
+                          <li>
+                              <a href="#">Пациентам</a></li>
+                          <li>
+                              <a href="#">Контакты</a></li>
+                      </ul>
+                  </nav>
+                  <a  class="header__btn reception-js header__btn--on-desktop btn btn--bold btn--pink">
+                    Записаться на приём
+                  </a>
+                  <div class="header__buttons">
+                      <div class="header__buttons-item header__buttons-item-edit">
+                        <span class="header__buttons-item-icon header__buttons-item-icon--edit">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#edit"></use>
+                            </svg>
+                        </span>
+                        <ul class="mobile-buttons">
+                            <li class="callback-js mobile-buttons__item mobile-buttons__item-call">
+                                <span class="mobile-buttons__icon ">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#phone"></use>
+                                    </svg>
+                                </span>
+                                Заказать <br>
+                                обратный звонок
+                            </li>
+                            <li class="reception-js mobile-buttons__item mobile-buttons__item-edit">
+                                <span class="mobile-buttons__icon ">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#edit"></use>
+                                    </svg>
+                                </span>
+                                Записаться  <br>
+                                на приём
+                            </li>
+                            <li class="mobile-buttons__item mobile-buttons__item-whatsup">
+                                <span class="mobile-buttons__icon ">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#whatsup"></use>
+                                    </svg>
+                                </span>
+                                Написать в чат  <br>
+                                в WhatsApp
+                            </li>
+                             <li class="mobile-buttons__item mobile-buttons__item-viber">
+                                <span class="mobile-buttons__icon ">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#viber"></use>
+                                    </svg>
+                                </span>
+                                Написать в чат  <br>
+                                в Viber
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="header__buttons-item header__buttons-item--call">
+                        <a class="header__buttons-item-icon header__buttons-item-icon--call">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#phone"></use>
+                            </svg>
+                        </a>
+                      </div>
+                  </div>
+                </div>
+                
+            </div>
+            <div class="mobile-menu">
+                <div class="messangeres mobile-menu__messangeres"> 
+                    <ul class=" messangeres__list">
+                        <li class="messangeres__item">
+                            <a href="tel:84995179900" class="messangeres__phone messangeres__phone--lit">8 (499) 517-99-00</a> <br>
+                            <div class="messangeres__callback callback-js">Заказать обратный звонок</div>
+                        </li>
+                    </ul>
+                </div>
+               <div class="mobile-menu__btn-container">
+                <a  class="reception-js mobile-menu__btn  btn btn--bold btn--pink">
+                    Записаться на приём
+                </a>
+                <div class="mobile-menu__options-buttons">
+                    <ul class="options-buttons__list">
+                        <li class="options-buttons__list-item">
+                           <form class="search" name="search__form">
+                                <div class="options-buttons__icon options-buttons__search-btn">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#loope"></use>
+                                    </svg>
+                                </div>
+                                <div class="search__input-container form__input-container">
+                                    <input type="text" class="search__input form__input">
+                                    <button class="options-buttons__icon search__button">
+                                        <svg class="icon">
+                                            <use xlink:href="img/sprite.svg#loope"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="options-buttons__list-item">
+                            <a href="#" class="options-buttons__icon options-buttons__lang">
+                               EN
+                            </a>
+                        </li>
+                        <li class="options-buttons__list-item">
+                            <a href="#" class="options-buttons__link">
+                               <span class="options-buttons__icon">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#eyes"></use>
+                                  </svg>
+                               </span>
+                             
+                             </a>
+                        </li>
+                        <li class="options-buttons__list-item">
+                            <a href="" class="messangeres__icon messangeres__icon--whatsup">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#whatsup"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="options-buttons__list-item">
+                            <a href="" class="messangeres__icon messangeres__icon--viber">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#viber"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="mobile-menu__nav">
+                    <ul>
+                        <li>
+                         <span> О центре 
+                            <span class="mobile-menu__dropdown-icon">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+                                </svg>
+                            </span>
+                         </span>
+                          <ul>
+                            <li>
+                                <a href="#">
+                                    Дальнозоркость
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Диагностика зрения
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Лазерная коррекция зрения
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Астигматизм
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Лечение катаракты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Близорукость
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Лечение глаукомы
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Детская офтальмология
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Лазерное лечение сетчатки
+                                </a>
+                            </li>
+                        </ul>
+                        </li>
+                        
+                        <li>
+                           <span>Услуги
+                            <span class="mobile-menu__dropdown-icon">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+                                </svg>
+                            </span>
+                           </span>
+
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Дальнозоркость
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Диагностика зрения
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Лазерная коррекция зрения
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Астигматизм
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Лечение катаракты
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Близорукость
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Лечение глаукомы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Детская офтальмология
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Лазерное лечение сетчатки
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li> <span>Контакты
+                            <span class="mobile-menu__dropdown-icon">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+                                </svg>
+                            </span>
+                         </span>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Дальнозоркость
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Диагностика зрения
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Лазерная коррекция зрения
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Астигматизм
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Лечение катаракты
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Близорукость
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Лечение глаукомы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Детская офтальмология
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Лазерное лечение сетчатки
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social mobile-menu__social">
+                    <ul class="social__list">
+                        <li class="social__list-item"><a href="#" class="social__link">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#facebook"></use>
+                            </svg>
+                        </a></li>
+                        <li class="social__list-item"><a href="#" class="social__link">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#inst"></use>
+                            </svg>
+                        </a></li>
+                        <li class="social__list-item"><a href="#" class="social__link">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#youtube"></use>
+                            </svg>
+                        </a></li>
+                    </ul>
+                </div>
+               </div>
+                
+            </div>
+        </header>
+        
+        <main class="main">
+      
+        <div class="main-slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                 <div class="swiper-slide">
+                     <div class="main-slider__item main-slider__item--main-page" style="background-image: url(images/banner-main.jpg);">
+                        <div class="main-slider__image-mob-container">
+                            <img src="images/mob-stock-img.jpg" alt="" class="main-slider__image-mob">
+                        </div>
+                        <div class="container">
+                            <div class="main-slider__dot main-slider__dot--top"></div>
+                            <div class="main-slider__help-arrow"></div>
+                           
+                            <div class="main-slider__stock">
+                                Акция
+                            </div>
+                            <div class="main-slider__stock-value">
+                                50% скидка 
+                            </div>
+                            <div class="main-slider__stock-text">
+                                на первичную  <br>
+                                диагностику зрения
+                            </div>
+                            <a href="#" class="btn btn--gradient btn--medium btn--upper main-slider__btn" >УЗНАТЬ ПОДРОБНЕЕ</a>
+                        </div>
+                     </div>
+                 </div>
+                 <div class="swiper-slide">
+                    <div class="main-slider__item main-slider__item--main-page" style="background-image: url(images/banner-main.jpg);">
+                       <div class="container">
+                           <div class="main-slider__dot main-slider__dot--top"></div>
+                           <div class="main-slider__help-arrow"></div>
+                           <div class="main-slider__stock">
+                               Акция
+                           </div>
+                           <div class="main-slider__stock-value">
+                               50% скидка 
+                           </div>
+                           <div class="main-slider__stock-text">
+                               на первичную  <br>
+                               диагностику зрения
+                           </div>
+                           <a href="#" class="btn btn--gradient btn--medium btn--upper main-slider__btn" >УЗНАТЬ ПОДРОБНЕЕ</a>
+                       </div>
+                    </div>
+                 </div>
+                </div>
+              
+            </div>
+             <div class="main-slider__navigation main-slider__navigation--main-page">
+                 <div class="container">
+       
+                    <div class="main-slider__navigation-row">
+                        <div class="main-slider__dot"></div>
+                        <div class="swiper-pagination main-slider__pagination main-slider__pagination--main-page"></div>
+                        <div class="main-slider__line"></div>
+             
+                        <div class="main-slider__arrows">
+                           
+                            <div class="swiper-button-prev main-slider__arrow">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#arrow-left"></use>
+                                </svg>
+                            </div>
+                            <div class="swiper-button-next main-slider__arrow">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+        </div>
+        <div class="breadcrumbs">
+            <div class="container">
+                <nav class="breadcrumbs__nav">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Главная
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                О центре
+                            </a>
+                        </li>
+                        <li>
+                            <span>
+                               Преимущества
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+      
+
+
+
+        <section class="features">
+            <div class="container">
+                <div class="head-block">
+                    <h2 class="head-block__title">
+                        Преимущества 
+                    </h2>
+                    <div class="head-block__line">
+                        
+                    </div>
+                    <a href="#" class="head-block__btn btn btn--blue btn--medium">Посмотреть все</a>
+                </div>
+                <div class="features__row">
+                    <div class="features__item-container">
+                        <div class="features-item">
+                            <div class="features-item__icon-container">
+                                <img class="features-item__icon" src="images/features/1.svg" alt="">
+                            </div>
+                            <div class="features-item__right">
+                                <h3 class="features-item__title">
+                                    Хирург с 30 летним 
+                                    стажем
+                                </h3>
+                                <p class="features-item__desc">
+                                    Все операции выполняет 
+                                    только один хирург профессор, 
+                                    А.А. Карамян.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features__item-container">
+                        <div class="features-item">
+                            <div class="features-item__icon-container">
+                                <img class="features-item__icon" src="images/features/2.svg" alt="">
+                            </div>
+                            <div class="features-item__right">
+                                <h3 class="features-item__title">
+                                    Оперируем более 
+                                    20 лет
+                                </h3>
+                                <p class="features-item__desc">
+                                    Гарантия качества.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features__item-container">
+                        <div class="features-item">
+                            <div class="features-item__icon-container">
+                                <img class="features-item__icon" src="images/features/3.svg" alt="">
+                            </div>
+                            <div class="features-item__right">
+                                <h3 class="features-item__title">
+                                    Эксимерный 
+и фемтосекундный 
+лазер 2017 года
+                                </h3>
+                                <p class="features-item__desc">
+                                    Лучшее оборудование, что есть для коррекции зрения. Мы выполнили более 5000
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features__item-container">
+                        <div class="features-item">
+                            <div class="features-item__icon-container">
+                                <img class="features-item__icon" src="images/features/4.svg" alt="">
+                            </div>
+                            <div class="features-item__right">
+                                <h3 class="features-item__title">
+                                    Безупречная 
+                                    репутация
+                                </h3>
+                                <p class="features-item__desc">
+                                    Среди пациентов много известных людей. Звезды эстрады, кино, политики, спортсмены.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features__item-container">
+                        <div class="features-item">
+                            <div class="features-item__icon-container">
+                                <img class="features-item__icon" src="images/features/5.svg" alt="">
+                            </div>
+                            <div class="features-item__right">
+                                <h3 class="features-item__title">
+                                    Уникальные 
+                                    возможности для 
+                                    лечения детей
+                                </h3>
+                                <p class="features-item__desc">
+                                    От многих проблем во взрослом 
+                                    возрасте можно избавиться в 
+                                    детстве.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features__item-container">
+                        <div class="features-item">
+                            <div class="features-item__icon-container">
+                                <img class="features-item__icon" src="images/features/6.svg" alt="">
+                            </div>
+                            <div class="features-item__right">
+                                <h3 class="features-item__title">
+                                    Собственный 
+                                    стационар
+                                </h3>
+                                <p class="features-item__desc">
+                                    В центре есть собственный 
+                                    стационар повышенной 
+                                    комфортности с палатами 
+                                    класса люкс
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </main>
+        <div class="bottom-blocks">
+            <div class="footer-forms">
+                <div class="container">
+                    <div class="footer-forms__row">
+                        <div class="footer-forms__item footer-forms__item--purple">
+                            <form  class="form form--border-purple form--bordered free-conslut">
+                                <div class="form__title-container form__title-container--abs">
+                                  <h3 class="form__title">
+                                  Бесплатная консультация
+                                  </h3>
+                                </div>
+                                <p>Какой вариант лечения подходит вам? </p> 
+                                <p>
+                                    Ответы вы можете получить  <br> 
+                                    на бесплатной консультации у наших  <br>
+                                    виртуозов, которые подберут для вас  <br>
+                                    наиболее оптимальное решение.
+                                </p>
+                                <div class="form__phone-container">
+                                    <a href="tel:84995179900" class="form__phone-link">
+                                        8 (499) 517-99-00
+                                    </a>
+                                </div>
+                                <div class="form__btn-container">
+                                    <button class="btn form__btn btn--pink btn--medium">
+                                        Отправить заявку
+                                    </button>
+                                </div>
+                               
+                            </form>
+                        </div>
+                        <div class="footer-forms__item footer-forms__item--blue">
+                            <form action="#" class="form form--border-blue form--bordered reception__form" id="reception" method="POST" name="consult">
+                                <div class="form__title-container form__title-container--abs">
+                                  <h3 class="form__title">
+                                    Записаться на приём
+                                  </h3>
+                                </div>
+                                <div class="form__input-container">
+                                    <input type="text" class="form__input" name="name" placeholder="Ваше имя">
+                                </div>
+                                <div class="form__input-container">
+                                    <input type="text" class="form__input numbox" name="phone" placeholder="Телефон 8 (ХХХ)  ХХХ-ХХ-ХХ">
+                                </div>
+                                <div class="form__input-container">
+                                    <textarea name="coment" class="form__textarea" placeholder="Комментарии и пожелания"></textarea>
+                                </div>
+                                <div class="form__btn-container">
+                                    <button class="btn form__btn btn--blue btn--medium">
+                                        Отправить заявку
+                                    </button>
+                                </div>
+                                <p class="form__politics">
+                                    Нажимая кнопку «Отправить», я даю согласие на обработку моих персональных данных 
+                                    в соответствии c Политикой конфиденциальности.
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer" id="footer">
+                <div class="container">
+                    <div class="footer__row">
+                        <div class="footer__left">
+                            <div class="footer__logo">
+                                <a href="/" class="footer__logo-img"></a>
+                            </div>
+                            <p class="footer__text">
+                                Copyright © 1997-2020  <br>
+                                Центр восстановления зрения. <br>
+                                Все права защищены.
+                            </p>
+                            <p class="footer__text">Лицензия № XX-XX-XX-XXXXX <br>
+                                от 21.01.2019 </p>
+                            <p class="footer__text">
+                                <a href="#">
+                                    Политика обработки и защиты 
+                                персональных данных
+                                </a>
+                            </p>
+                            <p class="footer__text">
+                                <a href="#">
+                                    Карта сайта
+                                </a>
+                            </p>
+                        </div>
+                        <div class="footer__right">
+                            <div class="footer__right-head">
+                                <h3 class="footer__list-title">
+                                    Услуги
+                                </h3>
+                                <h3 class="footer__list-title">
+                                    О клинике
+                                </h3>
+                                <div class="messangeres footer__messangeres">
+                                    <ul class=" messangeres__list">
+                                        <li class="messangeres__item">
+                                            <a href="" class="messangeres__icon messangeres__icon--whatsup">
+                                                <svg class="icon">
+                                                    <use xlink:href="img/sprite.svg#whatsup"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="messangeres__item">
+                                            <a href="" class="messangeres__icon messangeres__icon--viber">
+                                                <svg class="icon">
+                                                    <use xlink:href="img/sprite.svg#viber"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="messangeres__item">
+                                            <a href="tel:84995179900" class="messangeres__phone">8 (499) 517-99-00</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                               
+                            </div>
+                            <div class="footer__right-bottom">
+                                <div class="footer__menu-container">
+                                    <ul class="footer__menu-list footer__menu-list--columns-2">
+                                        <li><a href="#">Диагностика зрения</a></li>
+                                        <li><a href="#">Лазерное лечение сетчатки</a></li>
+                                        <li><a href="#">Лазерная коррекция зрения</a></li>
+                                        <li><a href="#">Астигматизм</a></li>
+                                        <li><a href="#">Лечение катаракты</a></li>
+                                        <li><a href="#">Близорукость</a></li>
+                                        <li><a href="#">Лечение прочих глазных 
+                                            заболеваний</a></li>
+                                        <li><a href="#">Лечение глаукомы</a></li>
+                                        <li><a href="#">Дальнозоркость</a></li>
+                                        <li><a href="#">Детская офтальмология</a></li>
+                                        <li><a href="#">Пресбиопия</a></li>
+                                        <li><a href="#">Кератоконус</a></li>
+                                        <li><a href="#">Косоглазие</a></li>
+                                    </ul>
+                                    <ul class="footer__menu-list">
+                                        <li><a href="#">Специалисты</a></li>
+                                        <li><a href="#">Справочник пациента</a></li>
+                                        <li><a href="#">Фотогалерея</a></li>
+                                        <li><a href="#">Преимущества</a></li>
+                                        <li><a href="#">Акции</a></li>
+                                        <li><a href="#">Лечение в кредит</a></li>
+                                    </ul>
+
+                                    
+                                </div>
+                                <div class="footer__contacts">
+                                    <div class="social footer__social">
+                                        <ul class="social__list">
+                                            <li class="social__list-item"><a href="#" class="social__link">
+                                                <svg class="icon">
+                                                    <use xlink:href="img/sprite.svg#facebook"></use>
+                                                </svg>
+                                            </a></li>
+                                            <li class="social__list-item"><a href="#" class="social__link">
+                                                <svg class="icon">
+                                                    <use xlink:href="img/sprite.svg#inst"></use>
+                                                </svg>
+                                            </a></li>
+                                            <li class="social__list-item"><a href="#" class="social__link">
+                                                <svg class="icon">
+                                                    <use xlink:href="img/sprite.svg#youtube"></use>
+                                                </svg>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="adress footer__adress">
+                                       <p> г. Москва, ул. Россолимо, д.11а</p>
+                                       <p> г. Москва, ул. Лобачевского, д.108</p>
+                                        <a href="#" class="adress__link">
+                                            Схема проезда
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+    </div>
+    
+
+    <div class="g-hidden">
+        <div class="b-modal" id="callback-modal">
+          <div class="b-modal_close arcticmodal-close"></div>
+          <form action="#" class="form form--border-blue form--bordered reception__form" id="" method="POST" name="consult">
+            <div class="form__title-container form__title-container--abs">
+              <h3 class="form__title">
+                Закажите звонок
+              </h3>
+            </div>
+            <div class="form__input-container">
+                <input type="text" class="form__input" name="name" placeholder="Ваше имя">
+            </div>
+            <div class="form__input-container">
+                <input type="text" class="form__input numbox" name="phone" placeholder="Телефон 8 (ХХХ)  ХХХ-ХХ-ХХ">
+            </div>
+            <div class="form__input-container">
+                <input type="text" class="form__input" name="time" placeholder="Время звонка 17:00">
+            </div>
+           
+            <div class="form__btn-container">
+                <button class="btn form__btn btn--blue btn--medium">
+                    Заказать звонок
+                </button>
+            </div>
+            <p class="form__politics">
+                Нажимая кнопку «Отправить», я даю согласие на обработку моих персональных данных 
+                в соответствии c Политикой конфиденциальности.
+            </p>
+        </form>
+        </div>
+        <div class="b-modal" id="reception-modal">
+            <div class="b-modal_close arcticmodal-close"></div>
+            <form action="#" class="form form--border-blue form--bordered reception__form" id="" method="POST" name="consult">
+              <div class="form__title-container form__title-container--abs">
+                <h3 class="form__title">
+                  Закажите звонок
+                </h3>
+              </div>
+              <div class="form__input-container">
+                  <input type="text" class="form__input" name="name" placeholder="Ваше имя">
+              </div>
+              <div class="form__input-container">
+                  <input type="text" class="form__input numbox" name="phone" placeholder="Телефон 8 (ХХХ)  ХХХ-ХХ-ХХ">
+              </div>
+              <div class="form__input-container">
+                  <textarea name="coment" class="form__textarea" placeholder="Комментарии и пожелания"></textarea>
+              </div>
+              <div class="form__btn-container">
+                  <button class="btn form__btn btn--blue btn--medium">
+                      Отправить заявку
+                  </button>
+              </div>
+              <p class="form__politics">
+                  Нажимая кнопку «Отправить», я даю согласие на обработку моих персональных данных 
+                  в соответствии c Политикой конфиденциальности.
+              </p>
+          </form>
+          </div>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

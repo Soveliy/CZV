@@ -14,7 +14,7 @@ gulp.task('clean', async function(){
 
 gulp.task('scss', function(){
   return gulp.src('app/scss/**/*.scss')
-    .pipe(sass({outputStyle: ''}))
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 8 versions']
     }))
@@ -52,6 +52,9 @@ gulp.task('script', function(){
 gulp.task('js', function(){
   return gulp.src([
     'node_modules/swiper/swiper-bundle.js',
+    'assest/js/mask.js',
+    'assest/js/jquery.validate.min.js',
+    'assest/js/jquery.arcticmodal.js',
     // 'node_modules/rateyo/lib/iife/rateyo.js',
     // 'node_modules/ion-rangeslider/js/ion.rangeSlider.min.js',
   ])
