@@ -37,6 +37,7 @@
 .header{
     box-sizing: border-box;
 <<<<<<< HEAD
+<<<<<<< HEAD
     padding: 11px 0;
     box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.16);
 
@@ -86,6 +87,11 @@
     box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.16);
     &__row{
 >>>>>>> parent of 9cdaf12... Item, doc
+=======
+    padding: 14px 0;
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.16);
+    &__row{
+>>>>>>> parent of 9cdaf12... Item, doc
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -101,6 +107,7 @@
         background-color: #F1F1F1;
     }
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 .mobile-buttons{
     position: absolute;
@@ -126,6 +133,10 @@
         z-index: -1;
     }
     &__item{
+=======
+.main-menu{
+    > ul {
+>>>>>>> parent of 9cdaf12... Item, doc
         display: flex;
         align-items: center;
         padding: 5px 5px 5px 10px;
@@ -242,6 +253,7 @@
             max-width: 100%;
         }
     }
+<<<<<<< HEAD
 
 }
 .burger{
@@ -302,6 +314,11 @@
     > ul > li{
         margin: 0 12px;
     }
+=======
+    > ul > li{
+        margin: 0 12px;
+    }
+>>>>>>> parent of 9cdaf12... Item, doc
     > ul > li > a{
         font-size: 16px;
         line-height: 21px;
@@ -440,6 +457,7 @@
     align-items: center;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     &--empty{
         position: relative;       
         .head-block__line{
@@ -494,6 +512,12 @@
     }
     &__title{
 >>>>>>> parent of 9cdaf12... Item, doc
+=======
+    @include for-md{
+        flex-direction: column;
+    }
+    &__title{
+>>>>>>> parent of 9cdaf12... Item, doc
         position: relative;
         font-size: 40px;
         line-height: 44px;
@@ -521,8 +545,12 @@
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-md {
+=======
+        @include for-md{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-md{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -559,9 +587,14 @@
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-md {
             display: none;
+=======
+        @include for-md{
+            display: none;  
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-md{
             display: none;  
@@ -577,8 +610,12 @@
         border-radius: 40px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-md {
+=======
+        @include for-md{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-md{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -912,6 +949,7 @@
         width: 166px;
         flex-shrink: 0;
         margin-right: 30px;
+<<<<<<< HEAD
         @include for-md(){
             display: flex;
             justify-content: space-between;
@@ -928,6 +966,8 @@
             align-items: center;
             text-align: center;
         }
+=======
+>>>>>>> parent of 9cdaf12... Item, doc
     }
     &__logo{
         height: 38px;
@@ -979,10 +1019,13 @@
         &:nth-child(2){
             margin-left: auto;
         }
+<<<<<<< HEAD
 
         @include for-sm(){
             display: none;
         }
+=======
+>>>>>>> parent of 9cdaf12... Item, doc
     }
     &__messangeres{
         margin-left: 100px;
@@ -1211,10 +1254,16 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 .service-menu {
     margin-top: 50px;
     margin-bottom: 64px;
+=======
+.service-menu{
+    margin-top: 50px;   
+    margin-bottom: 64px;     
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
 .service-menu{
     margin-top: 50px;   
@@ -1252,8 +1301,12 @@
             margin-left: 50px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             @include for-lg {
+=======
+            @include for-lg{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
             @include for-lg{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -1304,9 +1357,14 @@
         margin-right: 118px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-lg {
             margin-right: 5px;
+=======
+        @include for-lg{
+            margin-right: 5px;    
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-lg{
             margin-right: 5px;    
@@ -1326,8 +1384,12 @@
         margin-bottom: 87px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-sm {
+=======
+        @include for-sm{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-sm{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -1340,8 +1402,12 @@
         width: 557px !important;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-md {
+=======
+        @include for-md{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-md{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -1355,6 +1421,7 @@
     max-width: 557px;
     width: 100%;
     margin-right: 30px;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -1374,6 +1441,13 @@
     }
     &__inner{
 >>>>>>> parent of 9cdaf12... Item, doc
+=======
+    @include for-md{
+        margin: 0 auto;
+        max-width: 346px;
+    }
+    &__inner{
+>>>>>>> parent of 9cdaf12... Item, doc
         display: flex;
         border: 1px solid $dark_blue;
         border-radius: 22px;
@@ -1381,8 +1455,12 @@
         padding-right: 18px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-md {
+=======
+        @include for-md{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-md{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -1412,8 +1490,12 @@
             z-index: -1;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             @include for-md {
+=======
+            @include for-md{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
             @include for-md{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -1453,8 +1535,12 @@
         padding-top: 10px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-md {
+=======
+        @include for-md{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-md{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -1472,8 +1558,12 @@
         color: $dark_blue;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-md {
+=======
+        @include for-md{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-md{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -1489,8 +1579,12 @@
         color: #181716;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-md {
+=======
+        @include for-md{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-md{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -1528,8 +1622,12 @@
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-md {
+=======
+        @include for-md{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-md{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -1566,6 +1664,7 @@
         }
 =======
     }
+<<<<<<< HEAD
 }
 
 .price{
@@ -1575,15 +1674,22 @@
         padding-bottom: 70px;
 >>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     }
+=======
+>>>>>>> parent of 9cdaf12... Item, doc
     &__table{
         border-spacing: 0;
         border: none;
         width: 100%;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-tiny-tablet {
             border-spacing: 1px;
+=======
+        @include for-tiny-tablet{
+            border-spacing: 1px ;
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-tiny-tablet{
             border-spacing: 1px ;
@@ -1603,8 +1709,12 @@
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-tiny-tablet {
+=======
+        @include for-tiny-tablet{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-tiny-tablet{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -1624,8 +1734,12 @@
             width: 820px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             @include for-md {
+=======
+            @include for-md{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
             @include for-md{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -1642,8 +1756,12 @@
             width: 50px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             @include for-tiny-tablet {
+=======
+            @include for-tiny-tablet{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
             @include for-tiny-tablet{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -1682,8 +1800,12 @@
             text-align: left;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             @include for-md {
+=======
+            @include for-md{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
             @include for-md{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -1708,9 +1830,14 @@
             color: $dark_blue;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             @include for-tiny-tablet {
                 width: 40%;
+=======
+            @include for-tiny-tablet{
+                width: 40%;                
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
             @include for-tiny-tablet{
                 width: 40%;                
@@ -1729,8 +1856,12 @@
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-tiny-tablet {
+=======
+        @include for-tiny-tablet{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-tiny-tablet{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -1786,8 +1917,12 @@
             transform: translateX(-50%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             @include for-tiny-tablet {
+=======
+            @include for-tiny-tablet{                
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
             @include for-tiny-tablet{                
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -1802,8 +1937,12 @@
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-tiny-tablet {
+=======
+        @include for-tiny-tablet{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-tiny-tablet{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -1824,8 +1963,12 @@
         color: #181716;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-tiny-tablet {
+=======
+        @include for-tiny-tablet{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-tiny-tablet{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -1895,8 +2038,12 @@
         margin-top: 60px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-sm {
+=======
+        @include for-sm{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-sm{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -1909,8 +2056,12 @@
         width: 362px !important;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-md {
+=======
+        @include for-md{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-md{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -1925,6 +2076,7 @@
         margin: 0 auto;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     &__inner {
 =======
@@ -1938,6 +2090,9 @@
 =======
     &__inner{
 >>>>>>> parent of 9cdaf12... Item, doc
+=======
+    &__inner{
+>>>>>>> parent of 9cdaf12... Item, doc
         min-height: 249px;
         padding: 18px 18px 37px 22px;
         border-radius: 15px;
@@ -1945,8 +2100,12 @@
         background-color: #F9F9F9;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-md {
+=======
+        @include for-md{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-md{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -2009,8 +2168,12 @@
         line-height: 22px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-md {
+=======
+        @include for-md{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-md{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -2027,7 +2190,11 @@
         margin-top: 60px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         @include for-sm {
+=======
+        @include for-sm{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-sm{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -2040,12 +2207,18 @@
         width: 362px !important;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         @include for-md {
 =======
+=======
+>>>>>>> parent of 9cdaf12... Item, doc
         @include for-md{
             width: 45% !important;
         }
         @include for-sm{
+<<<<<<< HEAD
+>>>>>>> parent of 9cdaf12... Item, doc
+=======
 >>>>>>> parent of 9cdaf12... Item, doc
             width: 100% !important;
         }
@@ -2096,8 +2269,12 @@
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-sm {
+=======
+        @include for-sm{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-sm{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -2150,16 +2327,22 @@
         transition: $transition;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         &.active{
             transform: rotate(180deg);
         }
 >>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
 =======
+=======
+>>>>>>> parent of 9cdaf12... Item, doc
         
         &.active{
             transform: rotate(180deg);
         }
+<<<<<<< HEAD
+>>>>>>> parent of 9cdaf12... Item, doc
+=======
 >>>>>>> parent of 9cdaf12... Item, doc
     }
     &__body{
@@ -2171,8 +2354,12 @@
         border-bottom: 1px solid #D9DADA;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-sm {
+=======
+        @include for-sm{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-sm{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -2190,8 +2377,12 @@
         margin-left: auto;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-sm {
+=======
+        @include for-sm{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-sm{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -2207,6 +2398,7 @@
             margin-top: 45px;
         }
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     &__swiper-slide{
@@ -2228,6 +2420,9 @@
 =======
     &__container{
 >>>>>>> parent of 9cdaf12... Item, doc
+=======
+    &__container{
+>>>>>>> parent of 9cdaf12... Item, doc
         display: flex;
         align-items: center;
         justify-content: center;
@@ -2239,6 +2434,7 @@
     border-radius: 15px;
     border: 1px solid $dark_blue;
     overflow: hidden;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     &--vertiacal{
@@ -2270,6 +2466,9 @@
 =======
     @include for-tiny-tablet{
 >>>>>>> parent of 9cdaf12... Item, doc
+=======
+    @include for-tiny-tablet{
+>>>>>>> parent of 9cdaf12... Item, doc
         max-width: 312px;
     }
     &__inner{
@@ -2288,8 +2487,12 @@
         flex-shrink: 0;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-tiny-tablet {
+=======
+        @include for-tiny-tablet{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-tiny-tablet{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -2306,8 +2509,12 @@
         object-fit: cover;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-tiny-tablet {
+=======
+        @include for-tiny-tablet{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-tiny-tablet{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -2325,8 +2532,12 @@
         line-height: 22px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-tiny-tablet {
+=======
+        @include for-tiny-tablet{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-tiny-tablet{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -2350,8 +2561,12 @@
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-tiny-tablet {
+=======
+        @include for-tiny-tablet{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-tiny-tablet{
 >>>>>>> parent of 9cdaf12... Item, doc
@@ -2374,6 +2589,7 @@
         justify-content: flex-end;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         @include for-tiny-tablet {
 =======
         @include for-tiny-tablet{
@@ -2382,6 +2598,11 @@
         }
 =======
 >>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
+=======
+        @include for-tiny-tablet{
+            justify-content: center;
+        }
+>>>>>>> parent of 9cdaf12... Item, doc
     }
 }
 
@@ -2390,8 +2611,12 @@
         margin-top: 62px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         @include for-sm {
+=======
+        @include for-sm{
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
         @include for-sm{
 >>>>>>> parent of 9cdaf12... Item, doc

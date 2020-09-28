@@ -148,6 +148,7 @@ function dropdown(selectorTitle, activeClass){
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 dropdown('.questions-dropdown__title-block', 'active')
 
 // rate
@@ -230,6 +231,15 @@ $(".callback-js").click(function(){
 timer('.action--1 .timer', '2020-10-15');
 timer('.action--2 .timer', '2020-11-15');
 timer('.action--3 .timer', '2020-12-15');
+=======
+$('.questions-dropdown__title-block').click(function(){
+  $(this).toggleClass('active');
+  $(this).next().toggleClass('active').slideToggle();
+  $(this).find('.questions-dropdown__arrow-icon').toggleClass('active');
+});
+
+
+>>>>>>> parent of 9cdaf12... Item, doc
 =======
 $('.questions-dropdown__title-block').click(function(){
   $(this).toggleClass('active');
