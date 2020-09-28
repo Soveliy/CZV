@@ -62,7 +62,7 @@ a{
     padding: 0 15px;
     margin: 0 auto;
     // max-width: 1230px;
-    max-width: 1230px;
+    max-width: 1178px;
     box-sizing: border-box;
     font-size: 16px;
     line-height: 21px;
@@ -135,17 +135,32 @@ a{
     line-height: 40px;
     color: $dark_blue;
     text-align: center;
-    @include for-md-mob{
-        font-size:  38px;
-        line-height: 42px;
-        font-weight: 400;
-    }
 }
 
 .breadcrumbs{  
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    &--bg-grey{
+        background-color: #f9f9f9;
+        padding-top: 10px;
+        margin-top: 0;
+    }
+=======
+>>>>>>> parent of 9cdaf12... Item, doc
+=======
+>>>>>>> parent of 9cdaf12... Item, doc
+=======
+>>>>>>> parent of 9cdaf12... Item, doc
     @include for-md{
         display: none;
     }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
     &__nav{
         margin-top: 10px;
     } 
@@ -173,7 +188,6 @@ a{
         margin-left: 3px;
     }
 }
-
 .content-block{
     max-width: 754px;
     margin: 0 auto;
@@ -190,26 +204,24 @@ a{
         justify-content: center;
     }
 }
-
 .section-page{
     margin-bottom: 80px;
+<<<<<<< HEAD
+<<<<<<< HEAD
     @include for-md-mob{
         margin-bottom: 75px;
     }
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
+=======
+>>>>>>> parent of 7bbf3bf... Merge branch 'master' of https://github.com/Soveliy/CZV
 }
-
 .content-slider{
     overflow: visible !important;
     &__arrows{
         display: flex;
         align-items: center;
         margin-left: 24px;
-        @include for-md{
-            margin-left: 0; 
-            margin-top: 22px;
-            width: 100%;
-            justify-content: space-between; 
-        }
     }
     &__arrow{
         position: relative;
@@ -227,12 +239,9 @@ a{
             width: 64px;
             height: 1px;
             background-color: $dark_blue;
-            top: 50%;            
+            top: 50%;
+            
             transform: translateY(-50%);
-            @include for-md{
-                width: 53px;
-                z-index: -1;
-            }
         }
         &:hover{
             .icon{
@@ -253,14 +262,17 @@ a{
     &__arrow-right{
         margin-left: 68px;
         &::before{
-            right: 16px;
-        }
-        @include for-md{
-            margin-left: 0;
+            left: -66px;
         }
     }
     
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 162c1c2... Нормальынй комит
 }
 
  /* global */
@@ -284,6 +296,55 @@ a{
      }
   }
  .arcticmodal-error { padding: 20px;  border-radius: 10px; background: #000; color: #fff; }
+<<<<<<< HEAD
+=======
+.photo-block{
+    margin: 32px 0;
+    padding: 30px 0;
+    background-color: #F9F9F9;
+    &__img-block{
+        max-width: 558px;
+        margin: 0 auto;
+    }
+    &__img{
+        display: block;
+        width:  100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+}
+
+.insert-text{
+    margin: 32px 0;
+    padding: 30px 0;
+    background-color: #F9F9F9;
+    p{
+        position: relative;
+        padding-left: 26px;
+        margin: 0 auto;
+        max-width: 650px;
+        border-left: 4px solid $blue;
+        font-size: 26px;
+        line-height: 32px;
+        font-weight: 300;
+        color: $dark_blue;
+        @include for-sm{
+            margin-left: 24px;
+            margin-right: 11px;
+        }
+    }
+}
+=======
+}
+>>>>>>> parent of eaf1572... urpade
+=======
+}
+>>>>>>> parent of 9cdaf12... Item, doc
+=======
+}
+>>>>>>> parent of 9cdaf12... Item, doc
+>>>>>>> parent of 162c1c2... Нормальынй комит
 =======
 }
 >>>>>>> parent of 9cdaf12... Item, doc

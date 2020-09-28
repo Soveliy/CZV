@@ -14,7 +14,7 @@ gulp.task('clean', async function(){
 
 gulp.task('scss', function(){
   return gulp.src('app/scss/**/*.scss')
-    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(sass({outputStyle: ''}))
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 8 versions']
     }))
@@ -53,11 +53,14 @@ gulp.task('js', function(){
   return gulp.src([
     'node_modules/swiper/swiper-bundle.js',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'assest/js/mask.js',
     'assest/js/jquery.validate.min.js',
     'assest/js/jquery.arcticmodal.js',
 =======
 >>>>>>> parent of 9cdaf12... Item, doc
+=======
+>>>>>>> parent of 162c1c2... Нормальынй комит
     // 'node_modules/rateyo/lib/iife/rateyo.js',
     // 'node_modules/ion-rangeslider/js/ion.rangeSlider.min.js',
   ])
