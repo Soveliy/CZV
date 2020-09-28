@@ -85,6 +85,20 @@ a{
         }
         
     }
+    &--transparent{
+        background-color: transparent;
+        color: $blue;
+        border: 1px solid $blue;
+        &:hover{
+        background-color: $blue;
+        color: $white;
+        }
+        &:active{
+        background-color: $purple;
+        color: $white;
+        border-color: $purple;
+        }
+        }
     &--blue{
         background-color: $blue;
         color: $white;
