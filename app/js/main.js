@@ -262,6 +262,7 @@ $('.rate').each(function () {
     }
     }  
   });
+<<<<<<< HEAD
 
 
   $(".callback-js").click(function(){
@@ -312,3 +313,5 @@ $('.rate').each(function () {
 timer('.action--1 .timer', '2020-10-15');
 timer('.action--2 .timer', '2020-11-15');
 timer('.action--3 .timer', '2020-12-15');
+=======
+>>>>>>> parent of eaf1572... urpade

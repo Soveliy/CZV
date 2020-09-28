@@ -91,7 +91,7 @@
                             </li>
                             <li class="messangeres__item">
                                 <a href="tel:84995179900" class="messangeres__phone messangeres__phone--lit">8 (499) 517-99-00</a> <br>
-                                <div class="messangeres__callback callback-js">Заказать обратный звонок</div>
+                                <div class="messangeres__callback">Заказать обратный звонок</div>
                             </li>
                         </ul>
                     </div>
@@ -111,37 +111,15 @@
                   </div>
                   <nav class="main-menu">
                       <ul>
-                          <li>
-                              <a href="#">Услуги</a>
-                             <div class="submenu-container">
-                                <ul>
-                                    <li><a href="#">Преимущества</a></li>
-                                    <li><a href="#">Специалисты центра</a></li>
-                                    <li><a href="#">Оборудование</a></li>
-                                    <li><a href="#">Наша история</a></li>
-                                    <li><a href="#">Фотогалерея</a></li>
-                                    <li><a href="#">Интервью с главным врачом</a></li>
-                                    <li><a href="#">Знаменитые пациенты</a></li>
-                                    <li><a href="#">Новости</a></li>
-                                    <li><a href="#">Собственный стационар</a></li>
-                                    <li><a href="#">Научные работы и изобретения</a></li>
-                                    <li><a href="#">Лицензии</a></li>
-                                </ul>
-                             </div>
-                            </li>
-                          <li>
-                              <a href="#">Цены</a></li>
-                          <li>
-                              <a href="#">Отзывы</a></li>
-                          <li>
-                              <a href="#">Акции</a></li>
-                          <li>
-                              <a href="#">Пациентам</a></li>
-                          <li>
-                              <a href="#">Контакты</a></li>
+                          <li><a href="#">Услуги</a></li>
+                          <li><a href="#">Цены</a></li>
+                          <li><a href="#">Отзывы</a></li>
+                          <li><a href="#">Акции</a></li>
+                          <li><a href="#">Пациентам</a></li>
+                          <li><a href="#">Контакты</a></li>
                       </ul>
                   </nav>
-                  <a  class="header__btn reception-js header__btn--on-desktop btn btn--bold btn--pink">
+                  <a href="#" class="header__btn header__btn--on-desktop btn btn--bold btn--pink">
                     Записаться на приём
                   </a>
                   <div class="header__buttons">
@@ -152,7 +130,7 @@
                             </svg>
                         </span>
                         <ul class="mobile-buttons">
-                            <li class="callback-js mobile-buttons__item mobile-buttons__item-call">
+                            <li class="mobile-buttons__item mobile-buttons__item-call">
                                 <span class="mobile-buttons__icon ">
                                     <svg class="icon">
                                         <use xlink:href="img/sprite.svg#phone"></use>
@@ -161,7 +139,7 @@
                                 Заказать <br>
                                 обратный звонок
                             </li>
-                            <li class="reception-js mobile-buttons__item mobile-buttons__item-edit">
+                            <li class="mobile-buttons__item mobile-buttons__item-edit">
                                 <span class="mobile-buttons__icon ">
                                     <svg class="icon">
                                         <use xlink:href="img/sprite.svg#edit"></use>
@@ -206,12 +184,12 @@
                     <ul class=" messangeres__list">
                         <li class="messangeres__item">
                             <a href="tel:84995179900" class="messangeres__phone messangeres__phone--lit">8 (499) 517-99-00</a> <br>
-                            <div class="messangeres__callback callback-js">Заказать обратный звонок</div>
+                            <div class="messangeres__callback">Заказать обратный звонок</div>
                         </li>
                     </ul>
                 </div>
                <div class="mobile-menu__btn-container">
-                <a  class="reception-js mobile-menu__btn  btn btn--bold btn--pink">
+                <a href="#" class="mobile-menu__btn  btn btn--bold btn--pink">
                     Записаться на приём
                 </a>
                 <div class="mobile-menu__options-buttons">
@@ -471,13 +449,9 @@
                 <div class="swiper-wrapper">
                  <div class="swiper-slide">
                      <div class="main-slider__item main-slider__item--main-page" style="background-image: url(images/banner-main.jpg);">
-                        <div class="main-slider__image-mob-container">
-                            <img src="images/mob-stock-img.jpg" alt="" class="main-slider__image-mob">
-                        </div>
                         <div class="container">
                             <div class="main-slider__dot main-slider__dot--top"></div>
                             <div class="main-slider__help-arrow"></div>
-                           
                             <div class="main-slider__stock">
                                 Акция
                             </div>
@@ -847,67 +821,7 @@
         </div>
         
     </div>
-    
-
-    <div class="g-hidden">
-        <div class="b-modal" id="callback-modal">
-          <div class="b-modal_close arcticmodal-close"></div>
-          <form action="#" class="form form--border-blue form--bordered reception__form" id="" method="POST" name="consult">
-            <div class="form__title-container form__title-container--abs">
-              <h3 class="form__title">
-                Закажите звонок
-              </h3>
-            </div>
-            <div class="form__input-container">
-                <input type="text" class="form__input" name="name" placeholder="Ваше имя">
-            </div>
-            <div class="form__input-container">
-                <input type="text" class="form__input numbox" name="phone" placeholder="Телефон 8 (ХХХ)  ХХХ-ХХ-ХХ">
-            </div>
-            <div class="form__input-container">
-                <input type="text" class="form__input" name="time" placeholder="Время звонка 17:00">
-            </div>
-           
-            <div class="form__btn-container">
-                <button class="btn form__btn btn--blue btn--medium">
-                    Заказать звонок
-                </button>
-            </div>
-            <p class="form__politics">
-                Нажимая кнопку «Отправить», я даю согласие на обработку моих персональных данных 
-                в соответствии c Политикой конфиденциальности.
-            </p>
-        </form>
-        </div>
-        <div class="b-modal" id="reception-modal">
-            <div class="b-modal_close arcticmodal-close"></div>
-            <form action="#" class="form form--border-blue form--bordered reception__form" id="" method="POST" name="consult">
-              <div class="form__title-container form__title-container--abs">
-                <h3 class="form__title">
-                  Закажите звонок
-                </h3>
-              </div>
-              <div class="form__input-container">
-                  <input type="text" class="form__input" name="name" placeholder="Ваше имя">
-              </div>
-              <div class="form__input-container">
-                  <input type="text" class="form__input numbox" name="phone" placeholder="Телефон 8 (ХХХ)  ХХХ-ХХ-ХХ">
-              </div>
-              <div class="form__input-container">
-                  <textarea name="coment" class="form__textarea" placeholder="Комментарии и пожелания"></textarea>
-              </div>
-              <div class="form__btn-container">
-                  <button class="btn form__btn btn--blue btn--medium">
-                      Отправить заявку
-                  </button>
-              </div>
-              <p class="form__politics">
-                  Нажимая кнопку «Отправить», я даю согласие на обработку моих персональных данных 
-                  в соответствии c Политикой конфиденциальности.
-              </p>
-          </form>
-          </div>
-    </div>
+  
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>
